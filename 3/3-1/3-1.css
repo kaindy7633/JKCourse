@@ -1,0 +1,66 @@
+/* Create by LiuZhen At 2015/11/08 */
+h2 {
+	text-align: center;
+}
+
+#view {
+	width: 160px;
+	height: 160px;
+	margin: 80px auto 0;
+}
+#box {
+	-webkit-animation-name: animation;					/* 动画名称 */
+	-webkit-animation-timing-function: ease-in-out;		/* 动画动作 */
+	-webkit-animation-iteration-count: infinite;		/* 动画持续播放 */
+	-webkit-animation-duration: 5s;						/* 动画持续时间 */
+	-webkit-transform-style: preserve-3d;				/* 元素变形类型 */
+	-webkit-transform-origin: 80px 80px 0;				/* 基准点 */
+}
+@-webkit-keyframes animation {
+	from, to{}
+	15%{-webkit-transform: rotateY(-90deg);}                       /* 动画到15%元素延Y轴旋转90度 */
+	33%{-webkit-transform: rotateX(-90deg) rotateZ(135deg);}       /* 动画到33%元素延X轴旋转90度并延Z轴旋转135度 */
+	50%{-webkit-transform: rotateY(225deg) rotateZ(135deg);}       /* 动画到50%元素延Y轴旋转225度并延Z轴旋转135度 */
+	65%{-webkit-transform: rotateY(135deg) rotateX(135deg);}       /* 动画到65%元素延Y轴旋转135度并延X轴旋转135度 */
+	85%{-webkit-transform: rotateX(135deg);}                       /* 动画到85%元素延X轴旋转135度*/
+}
+#box div {
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	border: 3px solid #000;
+	-webkit-opacity: 0.6;
+}
+
+#box .one {
+	background-color: #FF0000;
+	-webkit-transform: translateZ(80px);
+}
+#box .two {
+	background-color: #0000FF;
+	-webkit-transform: rotateX(-90deg) translateZ(80px);
+}
+#box .three {
+	background-color: #FFFF00;
+	-webkit-transform: rotateX(90deg) translateZ(80px);
+}
+#box .four {
+	background-color: #FFFFFF;
+	-webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(80px);
+}
+#box .five {
+	background-color: #228B22;
+	-webkit-transform: rotateY(-90deg) translateZ(80px);
+}
+#box .six {
+	background-color: #FF8C00;
+	-webkit-transform: rotateY(90deg) translateZ(80px);
+}
+table {
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+}
+table,tr,td {
+	border: 3px solid #333333;
+}

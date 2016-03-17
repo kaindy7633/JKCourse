@@ -1,0 +1,218 @@
+/* Create By LiuZhen Version 1511022100 */
+/* Public Style */
+body,p,form,input,button,dl,dt,dd,ul,ol,li,h1,h2,h3,h4 {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+body,button,input,select,textarea {
+	font:12px Arial,Helvetica,sans-serif;
+	color:#333;
+	text-align: center;
+}
+input,select,textarea {
+	font-size:100%;
+}
+a {
+	text-decoration:underline;
+	color:#333;
+}
+a:hover {
+	color:blue;
+}
+img {
+	border:0 none;
+	vertical-align:top;
+}
+.clearfix {
+	clear: both;
+}
+header,section,footer,aside {
+	display: block;
+}
+header {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	margin-bottom: 55px;
+}
+ul.header-menu {
+	float: right;
+	margin-right: 10px;
+}
+ul.header-menu li {
+	float: left;
+	margin-left: 20px;
+}
+ul.header-menu li a {
+	font-size: 13px;
+}
+ul.header-menu li:nth-child(1) a,
+ul.header-menu li:nth-child(2) a,
+ul.header-menu li:nth-child(3) a,
+ul.header-menu li:nth-child(4) a,
+ul.header-menu li:nth-child(5) a,
+ul.header-menu li:nth-child(6) a {
+	font-weight: bold;
+}
+ul.header-menu li:last-child a {
+	text-decoration: none;
+	color: #fff;
+	background-color: #3388FF;
+	padding: 5px;
+}
+.logo {
+	margin-bottom: 26px;
+}
+.logo img {
+	width: 270px;
+	height: 129px;
+}
+input[type=search] {
+	width: 537px;
+	height: 34px;
+	text-align: left;
+	font-size: 15px;
+	text-indent: 5px;
+}
+input[type=submit] {
+	width: 100px;
+	height: 35px;
+	color: #fff;
+	background-color: #3385FF;
+	border: none;
+	font-size: 15px;
+	margin-left: -3px;
+	cursor: pointer;
+	margin-bottom: 350px;
+}
+input[type=submit]:hover {
+	background-color: #317EF3;
+}
+footer {
+	width: 100%;
+}
+.foot-link {
+	width: 100%;
+}
+ul.foot-link {
+	margin: 10px auto;
+}
+ul.foot-link li {
+	display: inline-block;
+	margin-right: 20px;
+}
+ul.foot-link li a {
+	color: #4F00CF;
+}
+.copyright {
+	color: #666;
+}
+.copyright a {
+	color: #666;
+}
+/* hide div */
+.hide-more-menu {
+	position: absolute;
+	top: 0;
+	left: 94%;
+	height: 100%;
+	background-color: #F9F9F9;
+	border-left: 1px solid #e2e2e2;
+	padding: 0 15px;
+	display: none;
+	z-index: 100;
+}
+.hide-more-menu ul li {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #F0F0F0;
+	padding: 0 0 5px 0;
+}
+.hide-more-menu ul li:first-child {
+	padding: 20px 0;
+}
+.hide-more-menu ul li a {
+	text-decoration: none;
+}
+.hide-more-menu ul li a:hover {
+	text-decoration: underline;
+}
+.hide-more-menu ul li a span.baidu-nuomi-icon {
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin-bottom: 5px;
+}
+.hide-more-menu ul li a span.baidu-zhidao-icon {
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -36px 0px;
+	margin-bottom: 5px;
+}
+.hide-more-menu ul li a span.baidu-yinyue-icon {
+	display: block;
+	width: 40px;
+	height: 36px;
+	margin: 0 auto;
+	background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -72px 0px;
+	margin-bottom: 5px;
+}
+.hide-more-menu ul li a span.baidu-tupian-icon {
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -112px 0px;
+	margin-bottom: 5px;
+}
+.hide-more-menu ul li a span.baidu-wenku-icon {
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -148px 0px;
+	margin-bottom: 5px;
+}
+.hide-more-menu ul li a span.baidu-fengyubang-icon {
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -184px 0px;
+	margin-bottom: 5px;
+}
+.hide-more-menu ul li a span.baidu-tuiguang-icon {
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -220px 0px;
+	margin-bottom: 5px;
+}
+span.foot-icon {
+	width: 14px;
+	height: 17px;
+	display: inline-block;
+	background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_45de3f02.png) no-repeat;
+	background-position: -600px -96px;
+	position: relative;
+	top: 3px;
+}

@@ -1,0 +1,28 @@
+.container {
+	width: 500px;
+	height: 500px;
+	margin: 20px auto;
+	text-align: center;
+	border: 1px solid #ccc;
+	background-color: #E2E2E2;
+}
+.container>h1 {
+	padding: 15px 0;
+}
+.container>input {
+	width: 350px;
+	height: 45px;
+	font-size: 22px;
+	text-indent: 15px;
+}
+.container>button {
+	width: 100px;
+	height: 55px;
+}
+.container>div {
+	height: 80px;
+	line-height: 80px;
+	font-size: 40px;
+	color: #f60;
+	font-weight: bold;
+}

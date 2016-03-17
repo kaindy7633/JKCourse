@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>开发完整计算器</title>
+		<link rel="stylesheet" type="text/css" href="6-1.css" />
+	</head>
+	<body>
+		<!-- 计算器主体 -->
+		<div class="container">
+			<div class="show-input mg-btm-15"><input type="text" id="showMsgInput" readonly value="0" /></div>
+			<!-- 计算器第二排 -->
+			<div class="calc-second mg-btm-15">
+				<ul>
+					<li class="calc-second-sin"><button id="getSin">sin</button></li>
+					<li class="calc-second-cos"><button id="getCos">cos</button></li>
+					<li class="calc-second-tan"><button id="getTan">tan</button></li>
+				</ul>
+			</div>
+			<div class="calc-three mg-btm-15">
+				<ul>
+					<li><button id="returnBack"></button></li>
+					<li><button id="clearAll"></button></li>
+					<li><button id="clearScreen"></button></li>
+					<li><button id="oppositeNumber"></button></li>
+					<li><button id="countdown"></button></li>
+				</ul>
+			</div>
+			<div class="calc-four mg-btm-15">
+				<ul>
+					<li><button class="nBtn">7</button></li>
+					<li><button class="nBtn">8</button></li>
+					<li><button class="nBtn">9</button></li>
+					<li><button class="double-opera">/</button></li>
+					<li><button id="percent">%</button></li>
+				</ul>
+			</div>
+			<div class="calc-five mg-btm-15">
+				<ul>
+					<li><button class="nBtn">4</button></li>
+					<li><button class="nBtn">5</button></li>
+					<li><button class="nBtn">6</button></li>
+					<li><button class="double-opera">*</button></li>
+					<li><button id="sqrt">√</button></li>
+				</ul>
+			</div>
+			<div class="clac-six">
+				<div class="calc-six-left">
+					<div class="calc-six-left-top mg-btm-15">
+						<ul>
+							<li><button class="nBtn">1</button></li>
+							<li><button class="nBtn">2</button></li>
+							<li><button class="nBtn">3</button></li>
+							<li><button class="double-opera">-</button></li>
+						</ul>
+					</div>
+					<div class="calc-six-left-btm">
+						<ul>
+							<li><button class="nBtn">0</button></li>
+							<li><button class="nBtn">.</button></li>
+							<li><button class="double-opera">+</button></li>
+						</ul>
+					</div>
+				</div>
+				<div class="calc-six-right"><button id="count">=</button></div>
+			</div>
+			
+		</div>
+	<!-- JS Loading... -->
+	<script type="text/javascript" src="6-1.js"></script>
+	</body>
+</html>

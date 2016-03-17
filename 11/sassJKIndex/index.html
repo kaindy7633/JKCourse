@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>利用Jquery完成极客学院首页完整版</title>
+    <!-- index.css -->
+    <link href="assets/css/index.min.css" rel="stylesheet" />
+    <link href="assets/css/swiper-3.2.7.min.css" rel="stylesheet" />
+  </head>
+  <body>
+	<div class="container f-col">
+		<!-- header start -->
+		<header>
+			<!-- top of header -->
+			<section class="header-top">
+				<div class="header-t-con w-1000 f-row">
+					<div class="h-logo f-1"><img src="images/logo_c8caff4.png" alt="极客学院" title="极客学院" class="ma-t15" /></div>
+					<div class="h-search f-2 f-col">
+						<form action="./" method="post" class="f-row">
+							<input type="search" placeholder="搜索课程、问答或Wiki" id="index-search" />
+							<input type="submit" value="" />
+						</form>
+						<!-- 搜索框右侧提示信息 -->
+						<div class="h-search-click">
+							<a href="javascript:;">Android</a>
+							<a href="javascript:;">iOS</a>
+							<a href="javascript:;">HTML5</a>
+						</div>
+					</div>
+					<div class="h-user f-1 f-row">
+						<span><i></i></span> | 
+						<span><a href="javascript:;">QQ登录</a></span> | 
+						<span><a href="javascript:;">登录</a></span> | 
+						<span><a href="javascript:;">注册</a></span>
+					</div>
+				</div>
+				<div class="header-t-line"></div>
+			</section>
+			<!-- bottom of header -->
+			<section class="header-btm">
+				<div class="header-b-con w-1000 f-row">
+					<div class="h-nav f-2">
+						<ul class="f-row">
+							<li><a href="javascript:;">首页</a></li>
+							<li><a href="javascript:;">职业课程</a></li>
+							<li><a href="javascript:;">就业学习</a></li>
+							<li><a href="javascript:;">极客社区</a></li>
+							<li><a href="javascript:;">极客+</a></li>
+						</ul>
+					</div>
+					<div class="h-vip f-1">
+						<ul class="f-row">
+							<li class="f-row"><i></i><a href="javascript">VIP会员</a></li>
+							<li class="f-row"><i></i><a href="javascript">求课程</a></li>
+							<li class="f-row"><i></i><a href="javascript">客户端</a></li>
+						</ul>
+					</div>
+					<!-- 隐藏菜单 -->
+					<div class="h-hide-menu">
+						<ul class="f-row">
+							<li>
+								<a href="javascript:;">课程库</a>
+								<a href="javascript:;">知识体系图</a>
+								<a href="javascript:;">职业路径图</a>
+								<a href="javascript:;">系列课程</a>
+							</li>
+							<li>
+								<a href="javascript:;">Web前端开发</a>
+								<a href="javascript:;">Android开发</a>
+								<a href="javascript:;">JavaWeb开发</a>
+							</li>
+							<li>
+								<a href="javascript:;">Wiki</a>
+								<a href="javascript:;">技术问答</a>
+								<a href="javascript:;">社群</a>
+								<a href="javascript:;">资源分享</a>
+							</li>
+							<li>
+								<a href="javascript:;">高校合作</a>
+								<a href="javascript:;">极客人才联盟</a>
+								<a href="javascript:;">布道师招募</a>
+								<a href="javascript:;">实战教练招募</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</header>
+		<!-- header end -->
+		
+		<!-- page wrapper start -->
+		<div class="wrapper w-1000">
+			<!-- 主区域导航、焦点图、其他信息 -->
+			<section class="wrapper-top f-row ma-t15">
+				<div class="w-top-nav">
+					<ul>
+						<li>
+							<div class="w-top-nav-tle f-row">
+								<a href="javascript:;">移动开发</a><i></i>
+							</div>
+							<div class="dropout-items">
+								<div>
+									<h1><a href="javascript:;">应用开发</a></h1>
+									<span>
+										<a href="javascript:;">Android</a> | 
+										<a href="javascript:;">iOS</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">游戏开发</a></h1>
+									<span>
+										<a href="javascript:;">Cocos</a> | 
+										<a href="javascript:;">Unity3D</a> | 
+										<a href="javascript:;">SpriteKit 2D</a> | 
+										<a href="javascript:;">Unreal</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">常用框架</a></h1>
+									<span>
+										<a href="javascript:;">Cordova</a> | 
+										<a href="javascript:;">React Native</a>
+									</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="w-top-nav-tle f-row">
+								<a href="javascript:;">前端开发</a><i></i>
+							</div>
+							<div class="dropout-items">
+								<div>
+									<h1><a href="javascript:;">前端基础</a></h1>
+									<span>
+										<a href="javascript:;">HTML</a> | 
+										<a href="javascript:;">CSS</a> | 
+										<a href="javascript:;">JavaScript</a> | 
+										<a href="javascript:;">HTML5</a> | 
+										<a href="javascript:;">CSS3</a> | 
+										<a href="javascript:;">技术前瞻</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">前端进阶</a></h1>
+									<span>
+										<a href="javascript:;">Typescript</a> | 
+										<a href="javascript:;">前端安全</a> | 
+										<a href="javascript:;">项目实战</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">前端框架</a></h1>
+									<span>
+										<a href="javascript:;">jQuery</a> | 
+										<a href="javascript:;">jQuery UI</a> | 
+										<a href="javascript:;">jQuery Mobile</a> | 
+										<a href="javascript:;">AngularJS</a> | 
+										<a href="javascript:;">ReactJS</a> | 
+										<a href="javascript:;">Bootstrap</a> | 
+										<a href="javascript:;">React Native</a> | 
+										<a href="javascript:;">Backbone</a> | 
+										<a href="javascript:;">Three.js</a> | 
+										<a href="javascript:;">Mootools</a> | 
+										<a href="javascript:;">Compass</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">HTML5游戏</a></h1>
+									<span>
+										<a href="javascript:;">Canvas</a> | 
+										<a href="javascript:;">SVG</a> | 
+										<a href="javascript:;">WebGL</a> | 
+										<a href="javascript:;">Cocos2d-js</a> | 
+										<a href="javascript:;">CreateJS</a> | 
+										<a href="javascript:;">Flash</a> | 
+										<a href="javascript:;">Unreal</a> | 
+										<a href="javascript:;">Egret</a> | 
+										<a href="javascript:;">Phaser</a> | 
+									</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="w-top-nav-tle f-row">
+								<a href="javascript:;">后端开发</a><i></i>
+							</div>
+							<div class="dropout-items">
+								<div>
+									<h1><a href="javascript:;">Python</a></h1>
+									<span>
+										<a href="javascript:;">Python基础</a> | 
+										<a href="javascript:;">Web2py</a> | 
+										<a href="javascript:;">Django</a> | 
+										<a href="javascript:;">Flask</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">PHP</a></h1>
+									<span>
+										<a href="javascript:;">PHP基础</a> | 
+										<a href="javascript:;">YII</a> | 
+										<a href="javascript:;">ThinkPHP</a> | 
+										<a href="javascript:;">Laravel</a> | 
+										<a href="javascript:;">WordPress</a> | 
+										<a href="javascript:;">Phalcon</a> | 
+										<a href="javascript:;">Apache</a> | 
+										<a href="javascript:;">Fackbook Hack</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">Node.js</a></h1>
+									<span>
+										<a href="javascript:;">Node.js 基础</a> | 
+										<a href="javascript:;">express</a> | 
+										<a href="javascript:;">Meteor</a> | 
+										<a href="javascript:;">Hexo</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">ASP.NET</a></h1>
+									<span>
+										<a href="javascript:;">C#</a> | 
+										<a href="javascript:;">ASP.NET MVC</a> | 
+										<a href="javascript:;">Entity Framework</a> | 
+										<a href="javascript:;">WPF</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">J2EE</a></h1>
+									<span>
+										<a href="javascript:;">JSP</a> | 
+										<a href="javascript:;">Maven</a> | 
+										<a href="javascript:;">Spring</a> | 
+										<a href="javascript:;">SpringMVC</a> | 
+										<a href="javascript:;">Struts2</a> | 
+										<a href="javascript:;">MyBatis</a> | 
+										<a href="javascript:;">Hibernate</a> | 
+										<a href="javascript:;">Lucene</a> | 
+										<a href="javascript:;">常用框架</a> | 
+										<a href="javascript:;">项目实战</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">Ruby</a></h1>
+									<span>
+										<a href="javascript:;">Ruby 基础</a> | 
+										<a href="javascript:;">Ruby on Rails</a> | 
+										<a href="javascript:;">Grape</a> | 
+										<a href="javascript:;">Ruby进阶</a> | 
+										<a href="javascript:;">RubyMine</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">Go</a></h1>
+									<span>
+										<a href="javascript:;">Go 基础</a> | 
+										<a href="javascript:;">beego</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">Erlang</a></h1>
+									<span>
+										<a href="javascript:;">Erlang 基础</a>
+									</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="w-top-nav-tle f-row">
+								<a href="javascript:;">基础知识</a><i></i>
+							</div>
+							<div class="dropout-items">
+								<div>
+									<h1><a href="javascript:;">基础语言</a></h1>
+									<span>
+										<a href="javascript:;">C</a> | 
+										<a href="javascript:;">C++</a> | 
+										<a href="javascript:;">Objective-C</a> | 
+										<a href="javascript:;">Swift</a> | 
+										<a href="javascript:;">C#</a> | 
+										<a href="javascript:;">Java</a> | 
+										<a href="javascript:;">Perl</a> | 
+										<a href="javascript:;">Shell</a> | 
+										<a href="javascript:;">Qt</a> | 
+										<a href="javascript:;">Scala</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">计算机基础</a></h1>
+									<span>
+										<a href="javascript:;">计算机组成原理</a> | 
+										<a href="javascript:;">网络工程</a> | 
+										<a href="javascript:;">Word</a> | 
+										<a href="javascript:;">Excel</a> | 
+										<a href="javascript:;">PowerPoint</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">开发基础</a></h1>
+									<span>
+										<a href="javascript:;">算法基础</a> | 
+										<a href="javascript:;">数据结构</a> | 
+										<a href="javascript:;">设计模式</a> | 
+										<a href="javascript:;">软件工程</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">开发工具</a></h1>
+									<span>
+										<a href="javascript:;">Git/Github</a> | 
+										<a href="javascript:;">SVN</a> | 
+										<a href="javascript:;">VI</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">开放标准</a></h1>
+									<span>
+										<a href="javascript:;">OpenCL</a> | 
+										<a href="javascript:;">Open XML</a> | 
+										<a href="javascript:;">OpenGL/GLES</a>
+									</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="w-top-nav-tle f-row">
+								<a href="javascript:;">云计算&大数据</a><i></i>
+							</div>
+							<div class="dropout-items">
+								<div>
+									<h1><a href="javascript:;">云计算</a></h1>
+									<span>
+										<a href="javascript:;">OpenStack</a> | 
+										<a href="javascript:;">Docker</a> | 
+										<a href="javascript:;">CloudStack</a> | 
+										<a href="javascript:;">Windows Azure</a> | 
+										<a href="javascript:;">IaaS</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">大数据</a></h1>
+									<span>
+										<a href="javascript:;">Hadoop</a> | 
+										<a href="javascript:;">Storm</a> | 
+										<a href="javascript:;">Hive</a> | 
+										<a href="javascript:;">Kafka</a> | 
+										<a href="javascript:;">Hbase</a> | 
+										<a href="javascript:;">Spark</a> | 
+										<a href="javascript:;">信息检索</a> | 
+										<a href="javascript:;">数据分析</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">虚拟化</a></h1>
+									<span>
+										<a href="javascript:;">VMware</a>
+									</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="w-top-nav-tle f-row">
+								<a href="javascript:;">智能硬件&物联网</a><i></i>
+							</div>
+							<div class="dropout-items">
+								<div>
+									<h1><a href="javascript:;">硬件架构</a></h1>
+									<span>
+										<a href="javascript:;">C51</a> | 
+										<a href="javascript:;">ARM</a> | 
+										<a href="javascript:;">Keil</a> | 
+										<a href="javascript:;">Cortex-M</a> | 
+										<a href="javascript:;">Cortex-A</a> | 
+										<a href="javascript:;">AVR</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">物联网操作系统</a></h1>
+									<span>
+										<a href="javascript:;">RTOS</a> | 
+										<a href="javascript:;">Android Wear</a> | 
+										<a href="javascript:;">Apple Watchkit</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">开源硬件平台</a></h1>
+									<span>
+										<a href="javascript:;">Arduino</a> | 
+										<a href="javascript:;">树莓派</a> | 
+										<a href="javascript:;">mbed</a> | 
+										<a href="javascript:;">GoKit</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">通信链接技术</a></h1>
+									<span>
+										<a href="javascript:;">无线WiFi</a> | 
+										<a href="javascript:;">移动通信</a> | 
+										<a href="javascript:;">蓝牙</a> | 
+										<a href="javascript:;">NFC</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">信息感知处理技术</a></h1>
+									<span>
+										<a href="javascript:;">传感器</a> | 
+										<a href="javascript:;">数据挖掘</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">人机交互技术</a></h1>
+									<span>
+										<a href="javascript:;">语音识别</a> | 
+										<a href="javascript:;">人脸识别</a> | 
+										<a href="javascript:;">手势识别</a> | 
+									</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="w-top-nav-tle f-row">
+								<a href="javascript:;">数据库</a><i></i>
+							</div>
+							<div class="dropout-items">
+								<div>
+									<h1><a href="javascript:;">SQL</a></h1>
+									<span>
+										<a href="javascript:;">MySQL</a> | 
+										<a href="javascript:;">SQL Server</a> | 
+										<a href="javascript:;">Oracle</a> | 
+										<a href="javascript:;">SQLite</a> | 
+										<a href="javascript:;">PostgreSQL</a> | 
+										<a href="javascript:;">DB2</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">NoSQL</a></h1>
+									<span>
+										<a href="javascript:;">Cassandra</a> | 
+										<a href="javascript:;">Redis</a> | 
+										<a href="javascript:;">MongoDB</a> | 
+									</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="w-top-nav-tle f-row">
+								<a href="javascript:;">认证考试</a><i></i>
+							</div>
+							<div class="dropout-items">
+								<div>
+									<h1><a href="javascript:;">计算机等级考试</a></h1>
+									<span>
+										<a href="javascript:;">一级</a> | 
+										<a href="javascript:;">二级C</a> | 
+										<a href="javascript:;">二级Java</a> | 
+										<a href="javascript:;">二级C++</a> | 
+										<a href="javascript:;">网络工程师</a> | 
+										<a href="javascript:;">数据库工程师</a> | 
+										<a href="javascript:;">信息安全工程师</a> | 
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">企业认证</a></h1>
+									<span>
+										<a href="javascript:;">思科认证</a> | 
+										<a href="javascript:;">Oracle认证</a> | 
+										<a href="javascript:;">Linux认证</a> | 
+										<a href="javascript:;">ARM认证</a>
+									</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="w-top-nav-tle f-row">
+								<a href="javascript:;">企业IT</a><i></i>
+							</div>
+							<div class="dropout-items">
+								<div>
+									<h1><a href="javascript:;">运维管理</a></h1>
+									<span>
+										<a href="javascript:;">Shell</a> | 
+										<a href="javascript:;">自动化运维</a> | 
+										<a href="javascript:;">Nginx</a> | 
+										<a href="javascript:;">Apache</a> | 
+										<a href="javascript:;">运维监控</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">操作系统</a></h1>
+									<span>
+										<a href="javascript:;">Linux</a> | 
+										<a href="javascript:;">Windows</a> | 
+										<a href="javascript:;">Mac OS</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">企业服务</a></h1>
+									<span>
+										<a href="javascript:;">B2C</a>
+									</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="w-top-nav-tle f-row">
+								<a href="javascript:;">设计&产品&测试</a><i></i>
+							</div>
+							<div class="dropout-items">
+								<div>
+									<h1><a href="javascript:;">设计基础</a></h1>
+									<span>
+										<a href="javascript:;">Photoshop</a> | 
+										<a href="javascript:;">Flash</a> | 
+										<a href="javascript:;">Illustrator</a> | 
+										<a href="javascript:;">Sketch</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">游戏设计</a></h1>
+									<span>
+										<a href="javascript:;">界面设计</a> | 
+										<a href="javascript:;">角色设计</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">产品经理</a></h1>
+									<span>
+										<a href="javascript:;">需求分析</a> | 
+										<a href="javascript:;">Axure</a> | 
+										<a href="javascript:;">项目实战</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">视觉设计</a></h1>
+									<span>
+										<a href="javascript:;">应用UI设计</a> | 
+										<a href="javascript:;">网页UI设计</a> | 
+										<a href="javascript:;">设计理论</a> | 
+										<a href="javascript:;">图形设计</a>
+									</span>
+								</div>
+								<div>
+									<h1><a href="javascript:;">测试工具</a></h1>
+									<span>
+										<a href="javascript:;">自动化测试</a>
+									</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="w-top-mdl">
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					        <div class="swiper-slide"><a href="javascript:;"><img src="images/slider/5664eaf706121.jpg" /></a></div>
+					        <div class="swiper-slide"><a href="javascript:;"><img src="images/slider/56713ac2e3934.jpg" /></a></div>
+					        <div class="swiper-slide"><a href="javascript:;"><img src="images/slider/5682601ec9ed1.jpg" /></a></div>
+					    </div>
+					    <!-- 如果需要分页器 -->
+					    <div class="swiper-pagination"></div>
+					    
+					    <!-- 如果需要导航按钮 -->
+					    <div class="swiper-button-prev"></div>
+					    <div class="swiper-button-next"></div>
+					</div>	
+					<div class="w-top-mclass ma-t10">
+						<ul class="f-row">
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/android.png" alt="Android开发工程师" title="Android开发工程师" />
+									<span>Android开发工程师</span>
+									<span>挑战月薪2万的工作机会</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/5661021bd07e6.jpg" alt="JavaWeb开发工程师" title="JavaWeb开发工程师" />
+									<span>JavaWeb开发工程师</span>
+									<span>Java人才4个月极速进阶</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/56615f22aa6eb.jpg" alt="" title="" />
+									<span>极客学院就业班</span>
+									<span>0基础&nbsp;|&nbsp;4个月&nbsp;|&nbsp;100%保就业</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="w-top-rgh f-1">
+					<div class="w-top-info">
+						<h3>快讯</h3>
+						<ul>
+							<li><a href="javascript:;">Wiki2.0重磅上线!</a></li>
+							<li><a href="javascript:;" class="txt-red">"分享经验 送机械键盘"立即参...</a></li>
+							<li><a href="javascript:;" class="txt-red">大神分享的干货汇总持续更新中</a></li>
+							<li><a href="javascript:;">极客学院斩获腾讯教育双科大奖</a></li>
+						</ul>
+					</div>
+					<div class="w-top-user f-row">
+						<div class="w-top-user-left"><img src="images/default.gif" alt="" title="" /></div>
+						<div class="w-top-user-right">
+							<span>Hi!你好</span>
+							<span>欢迎来到极客学院</span>
+							<span><a href="javascript:;">登录</a><a href="javascript:;">注册</a></span>
+						</div>
+					</div>
+					<div class="w-top-tab f-col">
+						<div class="w-top-tab-t f-1">
+							<ul class="f-row">
+								<li class="f-1"><a href="javascript:;"><i></i>问答</a></li>
+								<li class="f-1"><a href="javascript:;"><i></i>wiki</a></li>
+								<li class="f-1"><a href="javascript:;"><i></i>课程</a></li>
+								<li class="f-1"><a href="javascript:;"><i></i>社群</a></li>
+							</ul>
+						</div>
+						<div class="w-top-tab-b f-1">
+							<ul class="f-row">
+								<li class="f-1"><a href="javascript:;"><i></i>下载</a></li>
+								<li class="f-1"><a href="javascript:;"><i></i>知识</a></li>
+								<li class="f-1"><a href="javascript:;"><i></i>职业</a></li>
+								<li class="f-1"><a href="javascript:;"><i></i>VIP</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- 主区域分类Tab -->
+			<section class="wrapper-class-tab ma-t30 f-col">
+				<ul class="wrapper-class-tab-title f-row ma-b20">
+					<li class="f-1 li-foucs"><a href="javascript:;">热门推荐</a></li>
+					<li class="f-1 li-nofoucs"><a href="javascript:;">最新课程</a></li>
+					<li class="f-1 li-nofoucs"><a href="javascript:;">免费课程</a></li>
+					<li class="f-1 li-nofoucs"><a href="javascript:;">项目实战</a></li>
+					<li class="f-1 li-nofoucs"><a href="javascript:;">全球首发</a></li>
+					<li class="f-1 li-nofoucs"><a href="javascript:;">企业合作</a></li>
+				</ul>
+				<div class="wrapper-class-tab-con">
+					<!-- Tab Content One Start -->
+					<div class="tab-con-item-1 f-col">
+						<div class="tab-con-item-top">
+							<ul class="f-row">
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/5670cadac529a.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Apple TV 应用程序开发之控件元素进阶</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/56736e50049bb.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Python 初级项目：远程操控电脑（三）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566f7378c4b66.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Backbone 源码分析（1）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e24dedc098.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">HBase集群管理</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-con-item-btm">
+							<ul class="f-row">
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e25380e6fc.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Phaser 中的事件系统与用户交互</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e22947bc36.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">PHP 常见的关键字</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/5670cb3468716.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Drawable动画释解</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e2450e450a.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Swift 图书展示项目开发实战（一）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Tab Content One End -->
+					
+					<!-- Tab Content Two Start -->
+					<div class="tab-con-item-2 f-col" style="display: none;">
+						<div class="tab-con-item-top">
+							<ul class="f-row">
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/new/5681f1d9b90ab.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">综合案例：猫眼电影APP产品原型设计</a>
+										<span><i></i>7课时 179分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/new/5681f1a6433ae.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Android UiAutomator2使用spoor运行测试</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/new/568239e9d5ee5.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Compass 初识</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/new/5680954310fe6.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Photon Mmo中的公用枚举</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-con-item-btm">
+							<ul class="f-row">
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/new/5680919104426.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Phaser 中的事件系统与用户交互</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/new/56808fe2bcd70.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">PHP 常见的关键字</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/new/567ca61cbe689.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Drawable动画释解</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/new/567ca5f24a2e2.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Swift 图书展示项目开发实战（一）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Tab Content Two End -->
+					
+					<!-- Tab Content Three Start -->
+					<div class="tab-con-item-3 f-col" style="display: none;">
+						<div class="tab-con-item-top">
+							<ul class="f-row">
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/free/568239e9d5ee5.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Apple TV 应用程序开发之控件元素进阶</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/free/5672204b40f27.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Python 初级项目：远程操控电脑（三）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/free/5670ca7b033cf.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Backbone 源码分析（1）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/free/567128e200994.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">HBase集群管理</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-con-item-btm">
+							<ul class="f-row">
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/free/566e2450e450a.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Phaser 中的事件系统与用户交互</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/free/5668d8b2d8be9.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">PHP 常见的关键字</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/free/5668d877892b4.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Drawable动画释解</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/free/5667e9d9a335c.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Swift 图书展示项目开发实战（一）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Tab Content Three End -->
+					
+					<!-- Tab Content Four Start -->
+					<div class="tab-con-item-4 f-col" style="display: none;">
+						<div class="tab-con-item-top">
+							<ul class="f-row">
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/5670cadac529a.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Apple TV 应用程序开发之控件元素进阶</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/56736e50049bb.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Python 初级项目：远程操控电脑（三）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566f7378c4b66.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Backbone 源码分析（1）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e24dedc098.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">HBase集群管理</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-con-item-btm">
+							<ul class="f-row">
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e25380e6fc.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Phaser 中的事件系统与用户交互</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e22947bc36.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">PHP 常见的关键字</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/5670cb3468716.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Drawable动画释解</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e2450e450a.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Swift 图书展示项目开发实战（一）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Tab Content Four End -->
+					
+					<!-- Tab Content Five Start -->
+					<div class="tab-con-item-5 f-col" style="display: none;">
+						<div class="tab-con-item-top">
+							<ul class="f-row">
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/5670cadac529a.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Apple TV 应用程序开发之控件元素进阶</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/56736e50049bb.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Python 初级项目：远程操控电脑（三）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566f7378c4b66.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Backbone 源码分析（1）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e24dedc098.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">HBase集群管理</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-con-item-btm">
+							<ul class="f-row">
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e25380e6fc.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Phaser 中的事件系统与用户交互</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e22947bc36.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">PHP 常见的关键字</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/5670cb3468716.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Drawable动画释解</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e2450e450a.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Swift 图书展示项目开发实战（一）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Tab Content Five End -->
+					
+					<!-- Tab Content Six Start -->
+					<div class="tab-con-item-6 f-col" style="display: none;">
+						<div class="tab-con-item-top">
+							<ul class="f-row">
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/5670cadac529a.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Apple TV 应用程序开发之控件元素进阶</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/56736e50049bb.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Python 初级项目：远程操控电脑（三）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566f7378c4b66.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Backbone 源码分析（1）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e24dedc098.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">HBase集群管理</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-con-item-btm">
+							<ul class="f-row">
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e25380e6fc.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Phaser 中的事件系统与用户交互</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e22947bc36.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">PHP 常见的关键字</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/5670cb3468716.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Drawable动画释解</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+								<li class="f-col">
+									<a href="javascript:;"><img src="images/tab/hot/566e2450e450a.jpg" alt="" title="" /></a>
+									<div>
+										<a href="javascript:;">Swift 图书展示项目开发实战（一）</a>
+										<span><i></i>3课时 16分钟<em></em></span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Tab Content Six End -->
+				</div>
+			</section>
+			<!-- 主区域职业路径图 -->
+			<section class="wrapper-job-away ma-t30">
+				<div class="wrapper-job-away-title f-row">
+					<h1 class="f-1"><a href="javascript:;">职业路径图</a><i>?</i></h1>
+					<span class="f-1"><a href="javascript:;">更多 >></a></span>
+				</div>
+				<div class="wrapper-job-away-con f-col">
+					<div>
+						<ul class="f-row">
+							<li>
+								<a href="javascript:;" class="f-col">
+									<img src="images/job/5615cd7d3e99f.png" alt="" title="" />
+									<span class="ma-b25">WEB大前端工程师</span>
+									<span class="f-s12 txt-666">月薪15k-30k</span>
+									<span class="f-s12 txt-666 ma-b20">web开发的未来趋势</span>
+									<button>立即学习</button>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="f-col">
+									<img src="images/job/560905e64a9d1.png" alt="" title="" />
+									<span class="ma-b25">Android工程师</span>
+									<span class="f-s12 txt-666">月薪5k-30k</span>
+									<span class="f-s12 txt-666 ma-b20">最火爆的职业 人才缺口大</span>
+									<button>立即学习</button>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="f-col">
+									<img src="images/job/56160c8b90692.png" alt="" title="" />
+									<span class="ma-b25">iOS开发工程师</span>
+									<span class="f-s12 txt-666">月薪6k-35k</span>
+									<span class="f-s12 txt-666 ma-b20">企业必争的人才资源</span>
+									<button>立即学习</button>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="f-col">
+									<img src="images/job/5616279756548.png" alt="" title="" />
+									<span class="ma-b25">JavaWeb工程师</span>
+									<span class="f-s12 txt-666">月薪6k-35k</span>
+									<span class="f-s12 txt-666 ma-b20">就业面最广的职业方向</span>
+									<button>立即学习</button>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="f-col">
+									<img src="images/job/56162481a1ed6.png" alt="" title="" />
+									<span class="ma-b25">PHP工程师</span>
+									<span class="f-s12 txt-666">月薪5k-35k</span>
+									<span class="f-s12 txt-666 ma-b20">最好的开发语言 没有之一</span>
+									<button>立即学习</button>
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+					<div>
+						<ul class="f-row">
+							<li>
+								<a href="javascript:;" class="f-col">
+									<img src="images/job/561630f6d0d4c.png" alt="" title="" />
+									<span class="ma-b25">Cocos2d工程师</span>
+									<span class="f-s12 txt-666">月薪7k-30k</span>
+									<span class="f-s12 txt-666 ma-b20">最流行跨平台手机游戏开发</span>
+									<button>立即学习</button>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="f-col">
+									<img src="images/job/56163251dda94.png" alt="" title="" />
+									<span class="ma-b25">Uniti3D工程师</span>
+									<span class="f-s12 txt-666">月薪7k-40k</span>
+									<span class="f-s12 txt-666 ma-b20">国际最热门的3D游戏引擎</span>
+									<button>立即学习</button>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="f-col">
+									<img src="images/job/56163d072d61d.png" alt="" title="" />
+									<span class="ma-b25">ASP.NET工程师</span>
+									<span class="f-s12 txt-666">月薪5k-30k</span>
+									<span class="f-s12 txt-666 ma-b20">微软强力推行的开发语言</span>
+									<button>立即学习</button>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="f-col">
+									<img src="images/job/5617474782723.png" alt="" title="" />
+									<span class="ma-b25">大数据工程师</span>
+									<span class="f-s12 txt-666">月薪8k-40k</span>
+									<span class="f-s12 txt-666 ma-b20">目前最稀缺的职业方向</span>
+									<button>敬请期待</button>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="f-col">
+									<img src="images/job/56174712902f7.png" alt="" title="" />
+									<span class="ma-b25">运维工程师</span>
+									<span class="f-s12 txt-666">月薪6k-30k</span>
+									<span class="f-s12 txt-666 ma-b20">最能折腾的职业岗位</span>
+									<button>敬请期待</button>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- 主区域知识体系图 -->
+			<section class="wrapper-knowledge ma-t30">
+				<div class="wrapper-knowledge-title f-row">
+					<h1 class="f-1"><a href="javascript:;">知识体系图</a><i>?</i></h1>
+					<span class="f-1"><a href="javascript:;">更多 >></a></span>
+				</div>
+				<div class="wrapper-knowledge-con f-col">
+					<div>
+						<ul class="f-row">
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/android.png" alt="" title="" />
+									<span class="sp-fir">Android</span>
+									<span class="sp-sec">90门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/html.png" alt="" title="" />
+									<span class="sp-fir">HTML5开发</span>
+									<span class="sp-sec">116门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/Java.png" alt="" title="" />
+									<span class="sp-fir">Java语言</span>
+									<span class="sp-sec">45门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/php.png" alt="" title="" />
+									<span class="sp-fir">PHP语言</span>
+									<span class="sp-sec">26门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/javaweb.jpg" alt="" title="" />
+									<span class="sp-fir">JavaWeb</span>
+									<span class="sp-sec">64门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/ios.png" alt="" title="" />
+									<span class="sp-fir">iOS开发</span>
+									<span class="sp-sec">51门课程</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="f-row">
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/asp.net.png" alt="" title="" />
+									<span class="sp-fir">ASP.NET</span>
+									<span class="sp-sec">61门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/c.png" alt="" title="" />
+									<span class="sp-fir">C语言</span>
+									<span class="sp-sec">17门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/python.png" alt="" title="" />
+									<span class="sp-fir">Python</span>
+									<span class="sp-sec">59门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/54f56c854161d.png" alt="" title="" />
+									<span class="sp-fir">Unity 3D</span>
+									<span class="sp-sec">45门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/swift.png" alt="" title="" />
+									<span class="sp-fir">Swift语言</span>
+									<span class="sp-sec">11门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/54cfb5a451bbd.png" alt="" title="" />
+									<span class="sp-fir">C#</span>
+									<span class="sp-sec">30门课程</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="f-row">
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/54dab77e7b38a.png" alt="" title="" />
+									<span class="sp-fir">Bootstrap</span>
+									<span class="sp-sec">11门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/Cocos2d-x.png" alt="" title="" />
+									<span class="sp-fir">Cocos2d-x游戏开发</span>
+									<span class="sp-sec">109门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/55063dcc9bfe5.jpg" alt="" title="" />
+									<span class="sp-fir">计算机一级</span>
+									<span class="sp-sec">7门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/55063db66c32d.jpg" alt="" title="" />
+									<span class="sp-fir">计算机二级</span>
+									<span class="sp-sec">25门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/5535fe5532a6f.png" alt="" title="" />
+									<span class="sp-fir">GUI</span>
+									<span class="sp-sec">40门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/551b5d8b3619d.png" alt="" title="" />
+									<span class="sp-fir">WitchKit开发</span>
+									<span class="sp-sec">5门课程</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="f-row">
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/55519f5fc3333.png" alt="" title="" />
+									<span class="sp-fir">Docker</span>
+									<span class="sp-sec">9门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/54c5ebe62c7e9.png" alt="" title="" />
+									<span class="sp-fir">Egret</span>
+									<span class="sp-sec">7门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/5553fd84d5963.png" alt="" title="" />
+									<span class="sp-fir">Arduino</span>
+									<span class="sp-sec">14门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<img src="images/know/556543603b3e8.png" alt="" title="" />
+									<span class="sp-fir">AndroidUiAutoMator</span>
+									<span class="sp-sec">20门课程</span>
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<!--<img src="images/know/android.png" alt="" title="" />
+									<span class="sp-fir">Android</span>
+									<span class="sp-sec">90门课程</span>-->
+								</a>
+							</li>
+							<li class="f-1">
+								<a href="javascript:;" class="f-col">
+									<!--<img src="images/know/android.png" alt="" title="" />
+									<span class="sp-fir">Android</span>
+									<span class="sp-sec">90门课程</span>-->
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- 主区域精品课程 -->
+			<section class="wrapper-course ma-t30">
+				<div class="wrapper-course-title f-row">
+					<h1 class="f-1"><a href="javascript:;">精品系列课程</a><i>?</i></h1>
+					<span class="f-1"><a href="javascript:;">更多 >></a></span>
+				</div>
+				<div class="wrapper-course-con">
+					<ul class="f-row">
+						<li class="f-col">
+							<div class="course-con-li-t">
+								<h3>Java 设计模式</h3>
+								<img src="images/course/261410253583.jpg" alt="" title="" />
+							</div>
+							<div class="course-con-li-b">
+								<span>24门 67503人学习</span>
+								<a href="javascript:;">收藏</a>
+							</div>
+						</li>
+						<li class="f-col">
+							<div class="course-con-li-t">
+								<h3>Axure从入门到精通系...</h3>
+								<img src="images/course/141830293586.jpg" alt="" title="" />
+							</div>
+							<div class="course-con-li-b">
+								<span>16门 53707人学习</span>
+								<a href="javascript:;">收藏</a>
+							</div>
+						</li>
+						<li class="f-col">
+							<div class="course-con-li-t">
+								<h3>Python 初级教程</h3>
+								<img src="images/course/261410301443.jpg" alt="" title="" />
+							</div>
+							<div class="course-con-li-b">
+								<span>12门 92775人学习</span>
+								<a href="javascript:;">收藏</a>
+							</div>
+						</li>
+						<li class="f-col">
+							<div class="course-con-li-t">
+								<h3>Spring Data JPA</h3>
+								<img src="images/course/261415328354.jpg" alt="" title="" />
+							</div>
+							<div class="course-con-li-b">
+								<span>6门 19010人学习</span>
+								<a href="javascript:;">收藏</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- 主区域wiki -->
+			<section class="wrapper-wiki ma-t30">
+				<div class="wrapper-wiki-title f-row">
+					<h1 class="f-1"><a href="javascript:;">Wiki</a><i>?</i></h1>
+					<span class="f-1"><a href="javascript:;">更多 >></a></span>
+				</div>
+				<div class="wrapper-wiki-con">
+					<ul class="f-row">
+						<li class="wiki-con-item f-1">
+							<h3>推荐</h3>
+							<div class="wiki-mdl f-row">
+								<div class="wiki-mdl-left f-1">
+									<img src="images/wiki/dc49a349294041e181dec66d490e06c8.jpg" alt="" title="" />
+									<a href="javascript:;"><h6>iOS人机交互指南</h6><i>298页/48章</i></a>
+								</div>
+								<div class="wiki-mdl-right f-1">
+									<img src="images/wiki/411b49d1966f4447bd6a1229d5cf037d.jpg" alt="" title="" />
+									<a href="javascript:;"><h6>Struts 2 教程</h6><i>154页/31章</i></a>
+								</div>
+							</div>
+							<div class="wiki-btm">
+								<ul>
+									<li><a href="javascript:;" class="f-row"><span>· PHP 新手指南</span><span>137页/32章</span></a></li>
+									<li><a href="javascript:;" class="f-row"><span>· ASP.NET 编程指南</span><span>232页/35章</span></a></li>
+									<li><a href="javascript:;" class="f-row"><span>· RESTful Web 服务教程</span><span>50页/11章</span></a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="wiki-con-item f-1">
+							<h3>最新</h3>
+							<div class="wiki-mdl f-row">
+								<div class="wiki-mdl-left f-1">
+									<img src="images/wiki/dacf17869f2e494eafc59057379acaa9.jpg" alt="" title="" />
+									<a href="javascript:;"><h6>iOS人机交互指南</h6><i>298页/48章</i></a>
+								</div>
+								<div class="wiki-mdl-right f-1">
+									<img src="images/wiki/0447c306126e4bffa91853c45a244b44.jpg" alt="" title="" />
+									<a href="javascript:;"><h6>Struts 2 教程</h6><i>154页/31章</i></a>
+								</div>
+							</div>
+							<div class="wiki-btm">
+								<ul>
+									<li><a href="javascript:;" class="f-row"><span>· PHP 新手指南</span><span>137页/32章</span></a></li>
+									<li><a href="javascript:;" class="f-row"><span>· ASP.NET 编程指南</span><span>232页/35章</span></a></li>
+									<li><a href="javascript:;" class="f-row"><span>· RESTful Web 服务教程</span><span>50页/11章</span></a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="wiki-con-item f-1">
+							<h3>热门</h3>
+							<div class="wiki-mdl f-row">
+								<div class="wiki-mdl-left f-1">
+									<img src="images/wiki/40ad2cd7b04c49b781263dd37cab62f6.jpg" alt="" title="" />
+									<a href="javascript:;"><h6>iOS人机交互指南</h6><i>298页/48章</i></a>
+								</div>
+								<div class="wiki-mdl-right f-1">
+									<img src="images/wiki/d0cc39eaa8fc44dd8ba9f3fba467d38c.jpg" alt="" title="" />
+									<a href="javascript:;"><h6>Struts 2 教程</h6><i>154页/31章</i></a>
+								</div>
+							</div>
+							<div class="wiki-btm">
+								<ul>
+									<li><a href="javascript:;" class="f-row"><span>· PHP 新手指南</span><span>137页/32章</span></a></li>
+									<li><a href="javascript:;" class="f-row"><span>· ASP.NET 编程指南</span><span>232页/35章</span></a></li>
+									<li><a href="javascript:;" class="f-row"><span>· RESTful Web 服务教程</span><span>50页/11章</span></a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- 合作企业 -->
+			<section class="wrapper-company ma-t30">
+				<div class="wrapper-company-title f-row">
+					<h1 class="f-1"><a href="javascript:;">战略合作企业</a></h1>
+					<span class="f-1"><a href="javascript:;">更多 >></a></span>
+				</div>
+				<div class="wrapper-company-con f-col">
+					<ul class="f-row">
+						<li><a href="javascript:;"><img src="images/company/55cab4db88fee.png" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/company/55d2fa95ecda8.jpg" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/company/55d2fd0080bfa.png" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/company/5637373968bae.png" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/company/microsoft.jpg" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/company/tengxun.jpg" alt="" title="" /></a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- 合作院校 -->
+			<section class="wrapper-colleges ma-t30">
+				<div class="wrapper-colleges-title f-row">
+					<h1 class="f-1"><a href="javascript:;">合作院校</a></h1>
+					<span class="f-1"><a href="javascript:;">更多 >></a></span>
+				</div>
+				<div class="wrapper-colleges-con f-col">
+					<ul class="f-row">
+						<li><a href="javascript:;"><img src="images/colleges/1eb9dcb3193de807d21941b297483635.png" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/colleges/40669370a3f2ea7e3d21a6d182cf296c.png" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/colleges/604ebd122c8734703e1f49f7b4d842ad.png" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/colleges/62906dcda2846bc2437efa99ab382722.png" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/colleges/c14635ad605aca1d593e1e52500945af.png" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/colleges/c2000b91a02f14b794d2c9b9071e745d.png" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/colleges/c9a111a4946bf39e77cd811c207740b9.png" alt="" title="" /></a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- 媒体报道 -->
+			<section class="wrapper-media ma-t30">
+				<div class="wrapper-media-title f-row">
+					<h1 class="f-1"><a href="javascript:;">媒体报道</a></h1>
+					<span class="f-1"><a href="javascript:;">更多 >></a></span>
+				</div>
+				<div class="wrapper-media-con f-col">
+					<ul class="f-row">
+						<li><a href="javascript:;"><img src="images/media/mt_13_fefd1ec.jpg" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/media/mt_14_d3100a3.jpg" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/media/mt_1_42b5088.jpg" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/media/mt_2_28e84dd.jpg" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/media/mt_3_46bc154.jpg" alt="" title="" /></a></li>
+						<li><a href="javascript:;"><img src="images/media/mt_4_2376f75.jpg" alt="" title="" /></a></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<!-- page wrapper end -->
+		
+		<!-- footer start -->
+		<footer class="ma-t30">
+			<!-- 页脚导航 -->
+			<section class="footer-nav">
+				<ul class="f-row w-1000">
+					<li>
+						<dl>
+							<dt><a href="javascript:;">极客学院</a></dt>
+							<dd>· <a href="javascript:;">职业课程库</a></dd>
+							<dd>· <a href="javascript:;">知识体系图</a></dd>
+							<dd>· <a href="javascript:;">职业路径图</a></dd>
+							<dd>· <a href="javascript:;">企业课程</a></dd>
+							<dd>· <a href="javascript:;">资源下载</a></dd>
+							<dd>· <a href="javascript:;">课程标签</a></dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><a href="javascript:;">网站服务</a></dt>
+							<dd>· <a href="javascript:;">课程需求</a></dd>
+							<dd>· <a href="javascript:;">免费体验VIP</a></dd>
+							<dd>· <a href="javascript:;">黑板报</a></dd>
+							<dd>· <a href="javascript:;">网站地图</a></dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><a href="javascript:;">帮助中心</a></dt>
+							<dd>· <a href="javascript:;">技术问答</a></dd>
+							<dd>· <a href="javascript:;">VIP权益</a></dd>
+							<dd>· <a href="javascript:;">常见问题</a></dd>
+							<dd>· <a href="javascript:;">服务条款</a></dd>
+							<dd>· <a href="javascript:;">版权声明</a></dd>
+							<dd>· <a href="javascript:;">免责声明</a></dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><a href="javascript:;">交流合作</a></dt>
+							<dd>· <a href="javascript:;">关于我们</a></dd>
+							<dd>· <a href="javascript:;">联系我们</a></dd>
+							<dd>· <a href="javascript:;">社会招聘</a></dd>
+							<dd>· <a href="javascript:;">布道师招募</a></dd>
+							<dd>· <a href="javascript:;">合作咨询</a></dd>
+							<dd>· <a href="javascript:;">友情链接</a></dd>
+							<dd>· <a href="javascript:;">实战教练招募</a></dd>
+						</dl>
+					</li>
+					<li class="o-info">
+						<h1>极客学院,编程是一种信仰!</h1>
+						<a href="javascript:;" class="f-row phone-info">
+							<img src="images/iphone_ecb3977.png" />
+							<span class="f-col"><strong>手机客户端</strong><i>离线缓存 随时学习 ></i></span>
+						</a>
+						<div>
+							<a href="javascript:;" class="sina-icon"></a>
+							<a href="javascript:;" class="tieba-icon"></a>
+							<a href="javascript:;" class="wx-icon"></a>
+						</div>
+						<a href="javascript:;" class="service f-row">
+							<span class="service-icon"></span>
+							<span><em>联系我们</em><i>工作日9:00-21:00在线</i></span>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!-- 版权 -->
+			<section class="footer-rcopy">
+				<span>Copyright © 2013-2015</span>
+				<a href="javascript:;">极客学院</a>
+				<a href="javascript:;">jikexueyuan.com</a>
+				<span>All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802013056</span>
+			</section>
+		</footer>
+		<!-- footer end -->
+	</div>
+
+    <!-- JS Loading... -->
+    <script src="dist/scripts/require.js" data-main="dist/scripts/main.min"></script>
+  </body>
+</html>

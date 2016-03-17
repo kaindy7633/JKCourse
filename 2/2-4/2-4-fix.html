@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS3盒模型与弹性盒模型</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.xiezi {
+				width: 100px;
+				height: 100px;
+				background-color: orange;
+			}
+			.xiehe {
+				margin: 10px;
+				padding: 10px;
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+				border: 5px solid #CCCCCC;
+				box-shadow: 5px 5px 5px rgba(0,0,0,9);
+			}
+			.xiezi1 {
+				width: 100px;
+				height: 100px;
+				background-color: orange;
+			}
+			.xiehe1 {
+				margin: 10px;
+				padding: 10px;
+				width: 130px;
+				height: 130px;
+				background-color: blue;
+				border: 5px solid #CCCCCC;
+				box-sizing: border-box;
+				box-shadow: 5px 5px 5px 10px rgba(0,0,0,9);
+			}
+			.col {
+				width: 350px;
+				height: 350px;
+				-webkit-column-count: 2;
+				-webkit-column-rule-style: dashed;
+				-moz-column-count: 2;
+				-moz-column-rule-style: dashed;
+			}
+			.center {
+				width: 300px;
+				height: 300px;
+				background-color: orange;
+				display: -webkit-box;
+				display: -moz-box;
+				-webkit-box-align: center;
+				-moz-box-align: center;
+				-webkit-box-pack: center;
+				-moz-box-align: center;
+			}
+			.con {
+				display: -webkit-flex;
+				-webkit-flex-direction: column;
+			}
+			.first {
+				height: 100px;
+				background-color: orange;
+				-webkit-flex: 1;
+			}
+			#second {
+				height: 100px;
+				background-color: red;
+				-webkit-flex: 1;
+			}
+			#three {
+				height: 200px;
+				background-color: blue;
+				-webkit-flex: 1;
+			}
+			.con1 {
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-direction: row;
+				flex-direction: row;
+			}
+			.first1 {
+				height: 100px;
+				background-color: orange;
+				-webkit-flex: 1;
+			}
+			#second1 {
+				height: 100px;
+				background-color: red;
+				-webkit-flex: 1;
+			}
+			#three1 {
+				height: 200px;
+				background-color: blue;
+				-webkit-flex: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box-1" style="margin-bottom: 30px;">
+			<p>标准盒模型和怪异盒模型</p>
+			<div class="xiehe">
+				<div class="xiezi">鞋子</div>
+			</div>
+			<hr />
+			<div class="xiehe1">
+				<div class="xiezi1">鞋子</div>
+			</div>
+		</div>
+		
+		<div class="box-2" style="margin-bottom: 30px;">
+			<p>多列布局</p>
+			<div class="col">
+				<img src="http://img0.bdstatic.com/img/image/98ea1d728b7fc03b6e025f4fe7ece8401409805181.jpg" width="150" />
+				中国日报网11月4日电 据英国《金融时报》网站11月4日报道，英国手工奢侈智能手机制造商Vertu的手机以贵金属、皮套和蓝宝石屏幕为特色。Vertu已被瑞典私人股本集团殷拓(EQT)出售给中国投资者，这是高端品牌在亚洲受欢迎的最新迹象。
+				Vertu表示，香港基金公司Godin Holding联合“国际私人投资者”收购了该公司。
+				Vertu首席执行官马西米利亚诺•波利亚尼(Massimiliano Pogliani)也从任职了3年的位置上退了下来。他表示，现在是“将领导接力棒传给一个新团队的合适时机”。
+			</div>
+			<hr />
+			<div class="center">
+				<img src="http://img0.bdstatic.com/img/image/98ea1d728b7fc03b6e025f4fe7ece8401409805181.jpg" width="150" />
+			</div>
+		</div>
+		
+		<div class="box-3">
+			<p>弹性布局一（垂直方向）</p>
+			<div class="con">
+				<div class="first">第一个</div>
+				<div id="second">第二个</div>
+				<div id="three">第三个</div>
+			</div>
+			
+			<p>弹性布局二（水平方向）</p>
+			<div class="con1">
+				<div class="first1">第一个</div>
+				<div id="second1">第二个</div>
+				<div id="three1">第三个</div>
+			</div>
+		</div>
+	</body>
+</html>

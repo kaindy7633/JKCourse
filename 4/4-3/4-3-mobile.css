@@ -1,0 +1,212 @@
+/* 移动端样式 */
+body,p,form,input,button,dl,dt,dd,ul,ol,li,h1,h2,h3,h4 {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+body,button,input,select,textarea {
+	font:12px Arial,Helvetica,sans-serif;
+	color:#333;
+	text-align: center;
+}
+input,select,textarea {
+	font-size:100%;
+}
+a {
+	text-decoration:underline;
+	color:#333;
+}
+a:hover {
+	color:blue;
+}
+img {
+	border:0 none;
+	vertical-align:top;
+}
+.header-menu-ul {
+	display: none;
+}
+.header-menu {
+	
+}
+.mobile-top-menu {
+	position: relative;
+}
+.mobile-top-menu-icon {
+	width: 30px;
+	height: 25px;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	cursor: pointer;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.mobile-top-menu-icon>div {
+	width: 20px;
+	height: 0;
+	border: 1px solid #666;
+	margin: 5px auto;
+}
+.mobile-top-menu>ul {
+	position: absolute;
+	top: 40px;
+	right: 10px;
+	display: none;
+	z-index: 99;
+	text-align: left;
+	background-color: #ddd;
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+.mobile-top-menu>ul>li {
+	margin: 10px 0;
+}
+.index-logo>img {
+	width: 175px;
+	height: 85px;
+	margin-top: 40px;
+}
+.index-search-input {
+	width: 95%;
+	margin: 10px auto;
+}
+.search-input {
+	width: 70%;
+    height: 35px;
+    text-align: left;
+    font-size: 18px;
+    text-indent: 10px;
+    border-top: 1px solid #A9A9A9;
+    border-left: 1px solid #A9A9A9;
+    border-bottom: 1px solid #A9A9A9;
+}
+.search-button {
+	width: 85px;
+	height: 37px;
+    border: 1px solid #A9A9A9;
+    position: relative;
+    left: -1px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* 脚部样式 */
+.footer {
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+}
+.footer-link {
+}
+.footer-link>ul>li {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+/* 搜索框下列表 */
+.hide-more-menu {
+	display: none;
+}
+.mobile-main-menu {
+	margin: 10px auto;
+}
+.mobile-main-menu>ul {
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 40px;
+}
+.mobile-main-menu>ul>li {
+	flex: 1;
+}
+.mobile-main-menu>ul>li>a>span.baidu-nuomi-icon {
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin: 0 auto;
+	background-image: url(images/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 177px;
+	margin-bottom: 5px;
+}
+.mobile-main-menu>ul>li>a>span.baidu-zhidao-icon {
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin: 0 auto;
+	background-image: url(images/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -25px 0px;
+	background-size: 177px;
+	margin-bottom: 5px;
+}
+.mobile-main-menu>ul>li>a>span.baidu-yinyue-icon {
+	display: block;
+    width: 30px;
+    height: 25px;
+    margin: 0 auto;
+    background-image: url(images/bdbri_icons_2e35e84b.png);
+    background-repeat: no-repeat;
+    background-position: -50px 0px;
+    background-size: 180px;
+    margin-bottom: 5px;
+}
+.mobile-main-menu>ul>li>a>span.baidu-tupian-icon {
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin: 0 auto;
+	background-image: url(images/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -78px 0px;
+	background-size: 177px;
+	margin-bottom: 5px;
+}
+.mobile-main-menu>ul>li>a>span.baidu-wenku-icon {
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin: 0 auto;
+	background-image: url(images/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -101px 0px;
+	background-size: 177px;
+	margin-bottom: 5px;
+}
+.mobile-main-menu>ul>li>a>span.baidu-fengyubang-icon {
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin: 0 auto;
+	background-image: url(images/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -127px 0px;
+	background-size: 177px;
+	margin-bottom: 5px;
+}
+.mobile-main-menu>ul>li>a>span.baidu-tuiguang-icon {
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin: 0 auto;
+	background-image: url(images/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -152px 0px;
+	background-size: 177px;
+	margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

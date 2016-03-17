@@ -1,0 +1,72 @@
+/*
+ *	页面全局样式设置
+ */
+/* Public Style */
+body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,td,textarea,th,ul {
+    @include mar-pad;
+}
+body,button,input,select,textarea {
+    font-family: $fFamily;
+    font-size: $fSize;
+}
+body {
+    background-color: $bgColor;
+    color: $pColor;
+}
+h1,h2,h3,h4,h5,h6 {
+    @include fsize-100;
+}
+img {
+    border:0
+}
+li,ol,ul,em {
+    list-style:none
+}
+button,input,select,textarea {
+    @include fsize-100;
+    outline:0
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+a {
+    text-decoration: none;
+    color: $pColor;
+    &:hover {
+        color: $hColor;
+    }
+}
+article,aside,dialog,footer,header,section,footer,nav,figure,menu {
+    display: block;
+    box-sizing: border-box;
+    @include mar-pad;
+}
+.w-600 {
+    width: 600px;
+    margin: 50px auto;
+}
+/* 子项目竖向排列 */
+.f-col {
+    @include setDisplay;
+    @include setDirecCol;
+}
+/* 子项目横向排列 */
+.f-row {
+    @include setDisplay;
+    @include setDirecRow;
+}
+/* 子项目区域占比 */
+.f-1 {
+    @include setFlex(1);
+}
+.f-2 {
+    @include setFlex(2);
+}
+.f-3 {
+    @include setFlex(3);
+}
+/* 清除浮动 */
+.fixfloat {
+    clear: both;
+}

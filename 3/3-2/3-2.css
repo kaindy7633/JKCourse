@@ -1,0 +1,189 @@
+/* Create by LiuZhen At 2015/11/08 */
+h1 {
+	text-align: center;
+}
+.container {
+	text-align: center;
+	margin: 40px auto 0;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	padding: 5px;
+}
+.bird-head {
+	width: 80px;
+	height: 100px;
+	border: 1px solid #333333;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin:0 auto;
+	background-color: #333333;
+}
+.bird-left-eyes {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #333333;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	top: 29px;
+	left: 99px;
+	z-index: 2;
+	background-color: #fff;
+}
+.bird-right-eyes {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #333333;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	top: 24px;
+	left: 131px;
+	z-index: 2;
+	background-color: #fff;
+}
+.bird-left-eyes-middle {
+	width: 10px;
+	height: 10px;
+	background-color: #333;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	top: 12px;
+	left: 3px;
+	-webkit-animation-name: left-eyes;					
+	-webkit-animation-timing-function: ease-in-out;		
+	-webkit-animation-iteration-count: infinite;		
+	-webkit-animation-duration: 3s;					
+}
+@-webkit-keyframes left-eyes {
+	from, to{}
+	30%{-webkit-transform: translate(3px);}                       
+	60%{-webkit-transform: translate(8px);}       
+	90%{-webkit-transform: translate(13px);}                            
+}
+.bird-right-eyes-middle {
+	width: 10px;
+	height: 10px;
+	background-color: #333;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	top: 16px;
+	left: 3px;
+	-webkit-animation-name: right-eyes;					
+	-webkit-animation-timing-function: ease-in-out;		
+	-webkit-animation-iteration-count: infinite;		
+	-webkit-animation-duration: 3s
+}
+@-webkit-keyframes right-eyes {
+	from, to{}
+	30%{-webkit-transform: translate(7px);}                       
+	60%{-webkit-transform: translate(14px);}       
+	90%{-webkit-transform: translate(20px);}                            
+}
+.bird-mouth {
+	width: 100px;
+	height: 12px;
+	border: 3px solid #333;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+	background-color: #FFFF00;
+	position: absolute;
+	top: 80px;
+	left: 36px;
+	-webkit-transform: rotate(-23deg);
+}
+.bird-body {
+	width: 80px;
+	height: 120px;
+	border: 2px solid #333;
+	background-color: #78A6A4;
+	-webkit-border-bottom-left-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	position: absolute;
+	top: 100px;
+	left: 113px;
+	z-index: 99;
+}
+.bird-left-wing {
+	width: 60px;
+	height: 60px;
+	border: 2px solid #333;
+	border-radius: 50%;
+	background-color: #333;
+	position: absolute;
+	top: 108px;
+	left: 90px;
+}
+.bird-right-wing {
+	width: 70px;
+	height: 70px;
+	background-color: #333;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	position: absolute;
+	top: 105px;
+	left: 160px;
+	z-index: 100;
+	-webkit-transform: skewX(25deg) rotate(18deg);
+}
+
+.bird-left-foot-1 {
+	width: 5px;
+	height: 20px;
+	border: 2px solid #333;
+	background-color: #FFFF00;
+	position: absolute;
+	top: 222px;
+	left: 135px;
+}
+.bird-left-foot-2 {
+	width: 50px;
+	height: 5px;
+	border: 2px solid #333;
+	background-color: #FFFF00;
+	position: absolute;
+	top: 240px;
+	left: 100px;
+	-webkit-border-radius: 50%;
+	-webkit-transform: rotate(-8deg);
+}
+.bird-right-foot-1 {
+	width: 5px;
+	height: 20px;
+	border: 2px solid #333;
+	background-color: #FFFF00;
+	position: absolute;
+	top: 222px;
+	left: 168px;
+}
+.bird-right-foot-2 {
+	width: 50px;
+	height: 5px;
+	border: 2px solid #333;
+	background-color: #FFFF00;
+	position: absolute;
+	top: 240px;
+	left: 155px;
+	-webkit-border-radius: 50%;
+	-webkit-transform: rotate(8deg);
+}
+.bird-tail {
+	width: 130px;
+	height: 30px;
+	border: 2px solid #333;
+	background-color: #78A6A4;
+	position: absolute;
+	top: 183px;
+	left: 137px;
+	-webkit-transform: rotate(20deg) skew(55deg);
+	border-radius: 50px;
+}

@@ -1,0 +1,431 @@
+/************************ 
+ * 美食网移动端样式 
+ * *********************/
+
+/* Global Style */
+@charset "utf-8";
+a,body {
+	color:#333
+}
+body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,td,textarea,th,ul {
+	margin:0;
+	padding:0
+}
+body,button,input,select,textarea {
+	font-family: "微软雅黑","microsoft yahei",arial,tahoma;
+	font-size: 12px/1.5;
+}
+body {
+	background:#FFF;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%
+}
+img {
+	border:0
+}
+li,ol,ul {
+	list-style:none
+}
+button,input,select,textarea {
+	font-size:100%;
+	outline:0
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0
+}
+a {
+	text-decoration:none
+}
+.clearfix {
+	clear: both;
+}
+/* 浮动在左边 */
+.l {
+	float: left;
+}
+/* 浮动在右边 */
+.r {
+	float: right;
+}
+/* 居中 */
+.mdl {
+	margin: 0 auto;
+}
+.hide {
+	display: none;
+}
+article,aside,dialog,footer,header,section,footer,nav,figure,menu {
+	display:block;
+	margin: 0;
+	padding: 0;
+}
+/* 设置为弹性布局，整体方向延y轴方向向下 */
+.container {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: column;
+	-webkit-flex-flow: column;
+	-ms-flex-flow: column;
+	max-width: 790px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+/* 头部样式 */
+header {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: column;
+	-webkit-flex-flow: column;
+	-ms-flex-flow: column;
+}
+.header-top {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row;
+	-webkit-flex-flow: row;
+	-ms-flex-flow: row;
+	align-items: center;
+	background-color: #f65a5b;
+	padding: 3px 0;
+}
+.header-top div.header-top-logo {
+	flex: 1;
+	overflow: hidden;
+	font-size: .1rem;
+	background-image: url(../images/index-logo.png);
+	background-repeat: no-repeat;
+	background-size: 1.2rem;
+	text-indent: 1.2rem;
+	line-height: 27px;
+	color: #fff;
+}
+.header-top div.header-top-search {
+	flex: 3;
+	overflow: hidden;
+	line-height: 27px;
+	margin: auto;
+}
+.header-top div.header-top-search input {
+	border: none;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	width: 100%;
+    height: 1.5rem;
+    font-size: 15px;
+    text-indent: 5px;
+}
+.header-top div.header-top-menu {
+	flex: 1;
+	position: relative;
+}
+.header-top-menu span.header-top-menu-icon {
+	display: block;
+	width: 1.3rem;
+	height: 1.3rem;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.header-top-menu span.header-top-menu-icon i {
+	display: block;
+    width: 15px;
+    height: 0;
+    border: 1px solid #fff;
+    margin: 4px auto;
+}
+.header-btm {
+	width: 100%;
+	height: auto;
+}
+.header-btm img {
+	width: inherit;
+}
+/* 隐藏的弹出菜单 */
+div.header-hide-menu {
+	width: 5rem;
+    position: absolute;
+    top: 29px;
+    left: -26px;
+    background-color: #2F4F4F;
+    padding: 5px;
+    display: none;
+}
+div.header-hide-menu>ul>li {
+	margin-bottom: 1px;
+}
+div.header-hide-menu>ul>li>a {
+	height: 28px;
+	line-height: 28px;
+	font-size: .9rem;
+	color: #fff;
+}
+/* 页面主体样式 */
+nav {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row;
+	-webkit-flex-flow: row;
+	-ms-flex-flow: row;
+	margin: 5px 0;
+}
+nav>div {
+	flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	align-items: center;
+	-webkit-align-items: center;
+	width: 100%;
+	height: 4rem;
+}
+nav>div>a {
+	text-align: center;
+    width: 100%;
+    display: block;
+    font-size: .8rem;
+}
+nav div.container-nav-1>a>i {
+	display: block;
+    width: 2.66rem;
+    height: 2.66rem;
+    background-image: url(../images/index-sprite.png);
+    background-repeat: no-repeat;
+    background-size: 13rem;
+    background-position: -20px 1px;
+    margin: 0 auto;
+    font-size: .1rem;
+    text-align: center;
+    line-height: 6.5rem;
+}
+nav div.container-nav-2>a>i {
+	display: block;
+    width: 2.625rem;
+    height: 2.66rem;
+    background-image: url(../images/index-sprite.png);
+    background-repeat: no-repeat;
+    background-size: 13.1rem;
+    background-position: -63px 1px;
+    margin: 0 auto;
+    font-size: .1rem;
+    text-align: center;
+    line-height: 6.5rem;
+}
+nav div.container-nav-3>a>i {
+	display: block;
+    width: 2.66rem;
+    height: 2.66rem;
+    background-image: url(../images/index-sprite.png);
+    background-repeat: no-repeat;
+    background-size: 13rem;
+    background-position: -104px 1px;
+    margin: 0 auto;
+    font-size: .1rem;
+    text-align: center;
+    line-height: 6.5rem;
+}
+div.container-item {
+	/*display: flex;
+	display: -webkit-flex;*/
+}
+div.container-item h2 {
+	width: 100%;
+	padding: 5px 0;
+	background-color: #f65a5b;
+	color: #fff;
+	font-size: 14px;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row;
+	-webkit-flex-flow: row;
+}
+div.container-item h2 span:first-child {
+	flex: 9;
+	text-indent: 1rem;
+}
+div.container-item h2 span:last-child {
+	flex: 1;
+}
+div.container-item-1-content {
+	width: 90%;
+	margin: 10px auto;
+}
+div.container-item-1-content>div {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row;
+	-webkit-flex-flow: row;
+	margin-bottom: 1rem;
+}
+div.container-item-1-content>div>img {
+	flex: 1;
+    width: 4rem;
+    height: 4.5rem;
+    border-radius: 5px;
+}
+div.container-item-1-content>div>span {
+	flex: 3;
+	margin-left: 5px;
+}
+div.container-item-1-content>div>span>span {
+	display: block;
+}
+div.container-item-1-content>div>span>h3 {
+	font-size: .9rem;
+}
+div.container-item-1-content>div>span>span {
+	font-size: .1rem;
+	overflow: hidden;
+	height: 2rem;
+}
+div.container-item-1-content>div>span>span>strong {
+	font-size: 16px;
+	margin-right:5px;
+	color: #FF8C00;
+}
+div.container-item-2>div {
+	width: 90%;
+	margin: 10px auto;
+}
+div.container-item-2-content {
+	display: flex;
+	display: -webkit-flex;
+	flex: row;
+	-webkit-flex: row;
+}
+div.container-item-2-content>img {
+	flex: 1;
+	width: 4rem;
+    height: 4.5rem;
+    border-radius: 5px;
+    position: relative;
+    top: 7px;
+}
+div.container-item-2-content>span {
+	flex: 3;
+	margin-left: 5px;
+}
+div.container-item-2-content>span>h3 {
+	font-size: .9rem;
+	overflow: hidden;
+	height: 100%;
+	height: 1rem;
+	padding: 2px 0;
+}
+div.container-item-2-content>span>p {
+	font-size: .1rem;
+	overflow: hidden;
+	height: 2rem;
+}
+div.container-item-3-content {
+	width: 90%;
+	margin: 10px auto;
+}
+div.container-item-3-content>div {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row;
+	-webkit-flex-flow: row;
+	margin-bottom: 10px;
+}
+div.container-item-3-content>div>span {
+	flex: 1;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+div.container-item-3-content>div>span>strong {
+	display: block;
+	font-size: 12px;
+	width: 100%;
+	height: auto;
+	padding: 3px 0;
+	text-align: center;
+	background-color: #204056;
+	color: #fff;
+}
+div.container-item-3-content>div>div {
+	flex: 3;
+	margin-left: 5px;
+}
+div.container-item-3-content>div:nth-child(1)>span {
+	display: block;
+	width: 4rem;
+	height: 4.5rem;
+	background-image: url(../images/container-ftr-img.jpg);
+	background-repeat: no-repeat;
+	background-size: 5rem 18rem;
+}
+div.container-item-3-content>div:nth-child(2)>span {
+	display: block;
+	width: 4rem;
+	height: 4.5rem;
+	background-image: url(../images/container-ftr-img.jpg);
+	background-repeat: no-repeat;
+	background-size: 5rem 18rem;
+	background-position: left -72px;
+}
+div.container-item-3-content>div:nth-child(3)>span {
+	display: block;
+	width: 4rem;
+	height: 4.5rem;
+	background-image: url(../images/container-ftr-img.jpg);
+	background-repeat: no-repeat;
+	background-size: 5rem 18rem;
+	background-position: left -144px;
+}
+div.container-item-3-content>div:nth-child(4)>span {
+	display: block;
+	width: 4rem;
+	height: 4.5rem;
+	background-image: url(../images/container-ftr-img.jpg);
+	background-repeat: no-repeat;
+	background-size: 5rem 18rem;
+	background-position: left -215px;
+}
+div.container-item-3-content>div>div>span {
+	font-size: 12px;
+	display: block;
+}
+div.container-item-3-content>div>div>a {
+	font-size: 12px;
+	color: #A52A2A;
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 8px 0;
+	text-align: right;
+}
+/* 脚部样式 */
+footer {
+	width: 100%;
+	height: auto;
+	padding: 5px 0;
+	background-color: #2F4F4F;
+	color: #fff;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row;
+	-webkit-flex-flow: row;
+}
+div.copyright {
+	flex: 6;
+	font-size: .1rem;
+}
+div.footer-menu {
+	flex: 1;
+}
+div.footer-menu>div {
+	
+}
+div.footer-menu>div>span {
+	display: block;
+	width: 15px;
+	height: 0px;
+	border: 1px solid #fff;
+	margin: 5px auto;
+}

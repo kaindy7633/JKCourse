@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>demo</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="//cdn.bootcss.com/bootstrap-fileinput/4.2.9/css/fileinput.min.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- 主体 -->
+    <div class="container">
+  		<div class="row">
+  			<div class="col-md-12">
+  				<label class="control-label">Planets and Satellites</label>
+				  <input id="carouselUpload" name="carouselUpload" type="file" data-show-preview="false" multiple class="file-loading">
+  			</div>
+  		</div>
+    </div>
+
+    <!-- jQuery Loading -->
+	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Bootstrap JS Loading -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- fileupload JS Loading -->
+    <script src="//cdn.bootcss.com/bootstrap-fileinput/4.2.9/js/fileinput.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap-fileinput/4.2.9/js/fileinput_locale_zh.min.js"></script>
+    <!-- bootstrap fileinput config and callback function -->
+    <script>
+    	$(document).on('ready', function() {
+		    $("#carouselUpload").fileinput({
+	            language: "zh",
+	            uploadUrl: "http://localhost/learn/demo/demo.php",
+	            allowedFileExtensions: ["jpg", "png", "gif", "jpeg"],
+	            uploadAsync: true
+	       });
+
+        $("#carouselUpload").on("fileuploaded", function (event, data, previewId, index) {
+            console.log(event.result);
+        });
+
+
+		  });      
+    </script>
+  </body>
+</html>
+

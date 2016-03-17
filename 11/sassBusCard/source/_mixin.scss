@@ -1,0 +1,57 @@
+@mixin mar-pad {margin: 0; padding: 0;}
+@mixin fsize-100 {font-size:100%;}
+@mixin setDisplay {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin setDirecRow {
+	-webkit-flex-flow: row;
+	-moz-box-flex: row;
+	-ms-flex-flow: row;
+	flex-flow: row;
+}
+
+@mixin setDirecCol {
+	-webkit-flex-flow: column;
+	-moz-box-flex: column;
+	-ms-flex-flow: column;
+	flex-flow: column;
+}
+
+@mixin setFlex($v) {
+	-webkit-flex: $v;
+	-moz-box-flex: $v;
+	-ms-flex: $v;
+	flex: $v;
+}
+
+@mixin setRadius($a) {
+	-webkit-border-radius: $a;
+	-moz-border-radius: $a;
+	border-radius: $a;
+}
+
+/* 文字排列、位置、颜色 */
+@mixin setWords($a, $f, $c) {
+	text-align: $a;
+	font-size: $f;
+	color: $c;
+}
+
+/* 区域高度和行高 */
+@mixin setHeight($v) {
+	height: $v;
+	line-height: $v;
+}
+
+/* 定义区域宽和高 */
+@mixin setDivWH($w, $h) {
+	width: $w;
+	height: $h;
+}
+
+

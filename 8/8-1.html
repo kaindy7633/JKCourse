@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
+		<title>开发手机版本的百度新闻</title>
+		
+		<!-- Bootstrap css -->
+    		<link href="css/bootstrap.min.css" rel="stylesheet">
+    		<link href="css/page-index.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<!-- 页头按钮 -->
+			<header class="row">
+				<div class="page-head-left f-row col-xs-3">
+					<a href="javascript:;" class="index-icon"></a>
+					<a href="javascript:;" class="user-icon"></a>
+				</div>
+				<div class="page-logo-icon f-row col-xs-6"></div>
+				<div class="page-head-right f-row col-xs-3">
+					<a href="javascript:;" class="search-icon"></a>
+					<a href="javascript:;" class="add-icon"></a>
+				</div>
+			</header>
+			<!-- 导航菜单 -->
+			<nav class="row">
+				<ul class="f-row">
+					<li class="f-1"><a href="javascript:;" class="nav-fg">推荐</a></li>
+					<li class="f-1"><a href="javascript:;" class="nav-fg">百家</a></li>
+					<li class="f-1"><a href="javascript:;" class="nav-fg">本地</a></li>
+					<li class="f-1"><a href="javascript:;" class="nav-fg">图片</a></li>
+					<li class="f-1"><a href="javascript:;" class="nav-fg">娱乐</a></li>
+					<li class="f-1"><a href="javascript:;">社会</a></li>
+				</ul>
+				<ul class="f-row">
+					<li class="f-1"><a href="javascript:;" class="nav-fg">军事</a></li>
+					<li class="f-1"><a href="javascript:;" class="nav-fg">科技</a></li>
+					<li class="f-2"><a href="javascript:;" class="nav-fg">互联网</a></li>
+					<li class="f-1"><a href="javascript:;" class="nav-fg">女人</a></li>
+					<li class="f-1"><a href="javascript:;">搞笑</a></li>
+				</ul>
+				<ul class="f-row">
+					<li class="f-1"><a href="javascript:;" class="nav-fg">生活</a></li>
+					<li class="f-1"><a href="javascript:;" class="nav-fg">国际</a></li>
+					<li class="f-1"><a href="javascript:;" class="nav-fg">国内</a></li>
+					<li class="f-1"><a href="javascript:;" class="nav-fg">体育</a></li>
+					<li class="f-1"><a href="javascript:;" class="nav-fg">汽车</a></li>
+					<li class="f-1"><a href="javascript:;">财经</a></li>
+				</ul>
+				<ul class="f-row">
+					<li class="f-1"><a href="javascript:;" class="nav-fg">房产</a></li>
+					<li class="f-1"><a href="javascript:;" class="nav-fg">时尚</a></li>
+					<li class="f-1"><a href="javascript:;" class="nav-fg">教育</a></li>
+					<li class="f-1"><a href="javascript:;" class="nav-fg">游戏</a></li>
+					<li class="f-1"><a href="javascript:;" class="nav-fg">旅游</a></li>
+					<li class="f-1"><a href="javascript:;">人文</a></li>
+				</ul>
+				<ul class="f-row">
+					<li class="f-1"><a href="javascript:;" class="nav-fg">创意</a></li>
+					<li class="f-1"><a href="javascript:;">互联网+</a></li>
+					<li class="f-1">&nbsp;</li>
+				</ul>
+			</nav>
+			<!-- 榜单按钮及收起按钮 -->
+			<div class="nav-btm row">
+				<ul class="f-row col-xs-10">
+					<li><a href="javascript:;" class="nav-fg">记者榜</a></li>
+					<li><a href="javascript:;" class="nav-fg">媒体榜</a></li>
+					<li><a href="javascript:;">删除及排序</a></li>
+				</ul>
+				<a href="javascript:;" class="nav-hide-btn col-xs-2">收起<i></i></a>
+			</div>
+			<!-- 轮播图 -->
+			
+			<div class="carousel-div row">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel"">
+					  <div class="carousel-inner" role="listbox"></div>
+				</div>
+			</div>
+			
+			<!-- 热点滚动文字信息 -->
+			<div class="hot-info f-row mar-l-r row"></div>
+			
+			<!-- 推荐内容 -->
+			<div class="news-items" style="display: none;"></div>
+			
+			<!-- Loading数据动画 -->
+			<div class="spinner">
+			  <div class="rect1"></div>
+			  <div class="rect2"></div>
+			  <div class="rect3"></div>
+			  <div class="rect4"></div>
+			  <div class="rect5"></div>
+			  <span>正在加载，请稍后...</span>
+			</div>
+			
+			<!-- 加载更多按钮 -->
+			<div class="load-more f-row row">
+				<button class="btn btn-default">点击加载更多</button>
+			</div>
+			<!-- 页脚 -->
+			<footer class="row">
+				<div class="col-xs-4"><a href="javascript:;"><i class="f-return"></i>意见反馈</a></div>
+				<div class="col-xs-4"><a href="javascript:;"><i class="f-recommend"></i>应用推荐</a></div>
+				<div class="col-xs-4"><a href="javascript:;"><i class="f-app"></i>客户端</a></div>
+			</footer>
+		</div>
+	
+	<!-- jQuery Loading -->
+	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Bootstrap JS Loading -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+	</body>
+</html>

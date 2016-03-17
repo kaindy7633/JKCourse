@@ -1,0 +1,88 @@
+@import 'variable';
+@import 'mixin';
+@import 'reset';
+
+.container {
+	background-color: #efefef;
+	box-shadow: 5px 5px 10px #333;
+	@include setRadius(5px);
+}
+
+.page-top {
+	width: $w;
+	.page-top-l {
+		overflow: hidden;
+		.page-top-l-t {
+			display: block;
+			background-color: #FF116A;
+			width: 240px;
+			margin: 15px auto;
+		    @include setRadius(3px);
+		    @include setWords(center,65px,#fff);
+		    @include setHeight(100px);
+		}
+		.page-top-l-b {
+			text-align: center;
+			font-weight: bold;
+		}
+	}
+	.page-top-r {
+		overflow: hidden;
+		margin-top: 15px;
+		.page-top-r-t {
+			@include setWords(center, 21px, #009100);
+			font-weight: 600;
+		}
+		.page-top-r-m {
+			@include setWords(center, 12px, $pColor);
+			@include setHeight(50px);
+		}
+		.page-top-r-b {
+			@include setWords(center, 30px, #ff116a);
+		}
+	}
+}
+.page-mdl {
+	background-color: #009100;
+	margin: 10px 0;
+	ul {
+		width: 88%;
+		margin: 0 auto;
+		@include setWords(left, 12px, #fff);
+		@include setHeight(160px);
+		li {
+			float: left;
+			width: 22px;
+			@include setHeight(23px);
+		}
+	}
+}
+.page-btm {
+	width: $w;
+	.page-btm-t {
+		@include setWords(center, 12px, $pColor);
+	}
+	.page-btm-b {
+		@include setDivWH(70%, 30px);
+		margin: 0 auto;
+		.page-btm-b-l {
+			@include setDivWH(300px, 8px);
+			background-color: #FF116A;
+			display: inline-block;
+		}
+		.page-btm-b-r {
+			@include setDivWH(0, 0);
+			display: inline-block;
+			border-top: 16px solid transparent;
+		    border-left: 100px solid #FF116A;
+		    border-bottom: 0px solid transparent;
+		    margin-left: -5px;
+		    margin-top: 5px;
+		}
+	}
+}
+
+
+
+
+

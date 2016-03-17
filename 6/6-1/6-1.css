@@ -1,0 +1,498 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body,p,form,input,button,dl,dt,dd,ul,ol,li,h1,h2,h3,h4 {
+	list-style:none;
+}
+body,button,input,select,textarea {
+	font-size: 12px;
+	font-family: "微软雅黑","microsoft yahei",Arial,Helvetica,sans-serif;;
+	color:#333;
+}
+button {
+	display: block;
+	color: #333;
+	text-indent: -999px;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+img {
+	border:0 none;
+	vertical-align:top;
+}
+body {
+	background-color: #C97F50;
+}
+.mg-btm-15 {
+	margin-bottom: 15px;
+}
+.container {
+	width: 460px;
+	height: 485px;
+	background-color: #eee;
+	margin: 15px auto;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px #333;
+	box-sizing: border-box;
+	padding: 20px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: felx;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.show-input {
+	width: 100%;
+	height: 80px;
+	background-color: #fff;
+	border: 1px solid #333;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	position: relative;
+	box-shadow: 0px 0px 9px #333 inset;
+}
+.show-input>input {
+	position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 95%;
+    height: 65px;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 50px;
+}
+.calc-second {
+	
+}
+.calc-second ul {
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-box-flex: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+.calc-second ul li {
+	flex: 1;
+}
+.calc-second ul li button {
+	width: 120px;
+	height: 38px;
+	margin: 0 auto;
+}
+.calc-second ul li.calc-second-sin button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+.calc-second ul li.calc-second-sin button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: 0px -40px;
+}
+.calc-second ul li.calc-second-cos button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: 0px -80px;
+}
+.calc-second ul li.calc-second-cos button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: 0px -120px;
+}
+.calc-second ul li.calc-second-tan button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: 0px -160px;
+}
+.calc-second ul li.calc-second-tan button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: 0px -200px;
+}
+.calc-three ul {
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-box-flex: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+.calc-three ul li {
+	flex: 1;
+}
+.calc-three ul li button {
+	width: 74px;
+	height: 48px;
+	margin: 0 auto;
+}
+.calc-three ul li:nth-child(1) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -125px 0px;
+}
+.calc-three ul li:nth-child(1) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -125px -50px;
+}
+.calc-three ul li:nth-child(2) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -125px -100px;
+}
+.calc-three ul li:nth-child(2) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -125px -150px;
+}
+.calc-three ul li:nth-child(3) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -125px -200px;
+}
+.calc-three ul li:nth-child(3) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -125px -250px;
+}
+.calc-three ul li:nth-child(4) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -125px -300px;
+}
+.calc-three ul li:nth-child(4) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -125px -350px;
+}
+.calc-three ul li:nth-child(5) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -125px -400px;
+}
+.calc-three ul li:nth-child(5) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -125px -450px;
+}
+
+/************************************************/
+.calc-four ul {
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-box-flex: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+.calc-four ul li {
+	flex: 1;
+}
+.calc-four ul li button {
+	width: 74px;
+	height: 48px;
+	margin: 0 auto;
+}
+.calc-four ul li:nth-child(1) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -365px -100px;
+}
+.calc-four ul li:nth-child(1) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -365px -150px;
+}
+.calc-four ul li:nth-child(2) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -365px -200px;
+}
+.calc-four ul li:nth-child(2) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -365px -250px;
+}
+.calc-four ul li:nth-child(3) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -365px -300px;
+}
+.calc-four ul li:nth-child(3) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -365px -350px;
+}
+.calc-four ul li:nth-child(4) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -365px -400px;
+}
+.calc-four ul li:nth-child(4) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -365px -450px;
+}
+.calc-four ul li:nth-child(5) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -205px 0px;
+}
+.calc-four ul li:nth-child(5) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+    background-position: -205px -50px;
+}
+
+/************************************************/
+.calc-five ul {
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-box-flex: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+.calc-five ul li {
+	flex: 1;
+}
+.calc-five ul li button {
+	width: 74px;
+	height: 48px;
+	margin: 0 auto;
+}
+.calc-five ul li:nth-child(1) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -285px -200px;
+}
+.calc-five ul li:nth-child(1) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -285px -250px;
+}
+.calc-five ul li:nth-child(2) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -285px -300px;
+}
+.calc-five ul li:nth-child(2) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -285px -350px;
+}
+.calc-five ul li:nth-child(3) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -285px -400px;
+}
+.calc-five ul li:nth-child(3) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -285px -450px;
+}
+.calc-five ul li:nth-child(4) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -450px 0px;
+}
+.calc-five ul li:nth-child(4) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -450px -50px;
+}
+.calc-five ul li:nth-child(5) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -205px -100px;
+}
+.calc-five ul li:nth-child(5) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+    background-position: -205px -150px;
+}
+/**********************************************/
+.clac-six {
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-box-flex: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	margin-bottom: -10px;
+}
+.clac-six .calc-six-left {
+	flex: 4;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-box-flex: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.clac-six .calc-six-left .calc-six-left-top {
+	/*margin-bottom: 10px;*/
+}
+.clac-six .calc-six-left .calc-six-left-top ul {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-box-flex: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+.clac-six .calc-six-left .calc-six-left-top ul li {
+	flex: 1;
+}
+.calc-six-left-top ul li button {
+	width: 74px;
+	height: 48px;
+	margin: 0 auto;
+}
+.calc-six-left-top ul li:nth-child(1) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+    background-position: -205px -300px;
+}
+.calc-six-left-top ul li:nth-child(1) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+    background-position: -205px -350px;
+}
+.calc-six-left-top ul li:nth-child(2) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+    background-position: -205px -400px;
+}
+.calc-six-left-top ul li:nth-child(2) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+    background-position: -205px -450px;
+}
+.calc-six-left-top ul li:nth-child(3) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -285px -100px;
+}
+.calc-six-left-top ul li:nth-child(3) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+    background-position: -285px -150px;
+}
+.calc-six-left-top ul li:nth-child(4) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -450px -100px;
+}
+.calc-six-left-top ul li:nth-child(4) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+    background-position: -450px -150px;
+}
+.clac-six .calc-six-left .calc-six-left-btm ul {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-moz-box-flex: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+.calc-six-left-btm ul li button {
+	width: 74px;
+	height: 48px;
+	margin: 0 auto;
+}
+.clac-six .calc-six-left .calc-six-left-btm ul li:nth-child(1) {
+	flex: 2;
+}
+.calc-six-left-btm ul li:nth-child(1) button {
+	width: 162px;
+	height: 48px;
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -285px 0px;
+}
+.calc-six-left-btm ul li:nth-child(1) button:active {
+	width: 162px;
+	height: 48px;
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -285px -50px;
+}
+.calc-six-left-btm ul li:nth-child(2) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -205px -200px;
+}
+.calc-six-left-btm ul li:nth-child(2) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -205px -250px;
+}
+.calc-six-left-btm ul li:nth-child(3) button {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -450px -200px;
+}
+.calc-six-left-btm ul li:nth-child(3) button:active {
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: -450px -250px;
+}
+.clac-six .calc-six-left .calc-six-left-btm ul li:nth-child(2) {
+	flex: 1;
+}
+.clac-six .calc-six-left .calc-six-left-btm ul li:nth-child(3) {
+	flex: 1;
+}
+.clac-six .calc-six-right {
+	flex: 1;
+}
+.clac-six .calc-six-right button {
+	width: 74px;
+	height: 104px;
+	margin: 0 auto;
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: 0px -238px;
+}
+.clac-six .calc-six-right button:active {
+	width: 74px;
+	height: 104px;
+	margin: 0 auto;
+	background-image: url(images/index.png);
+	background-repeat: no-repeat;
+	background-position: 0px -344px;
+}

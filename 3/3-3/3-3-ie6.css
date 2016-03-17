@@ -1,0 +1,276 @@
+/* Create By LiuZhen At 2015/11/08 */
+/* Public Style */
+body,p,form,input,button,dl,dt,dd,ul,ol,li,h1,h2,h3,h4 {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+body,button,input,select,textarea {
+	font:12px Arial,Helvetica,sans-serif;
+	color:#333;
+	text-align: center;
+}
+input,select,textarea {
+	font-size:100%;
+}
+a {
+	text-decoration:underline;
+	color:#333;
+}
+a:hover {
+	color:blue;
+}
+img {
+	border:0 none;
+	vertical-align:top;
+}
+/* header style */
+.header-menu {
+	width: 100%;
+}
+.header-menu ul.header-menu-ul {
+	float: right;
+	margin-right: 10px;
+	padding: 15px 0;
+	position: relative;
+}
+.header-menu ul.header-menu-ul li {
+	float: left;
+}
+.header-menu ul.header-menu-ul li a {
+	display: block;
+	margin-left: 15px;
+	font-size: 13px;
+	padding: 5px;
+}
+.header-menu ul.header-menu-ul li:nth-child(1) a,
+.header-menu ul.header-menu-ul li:nth-child(2) a,
+.header-menu ul.header-menu-ul li:nth-child(3) a,
+.header-menu ul.header-menu-ul li:nth-child(4) a,
+.header-menu ul.header-menu-ul li:nth-child(5) a {
+	font-weight: bold;
+}
+.header-menu ul.header-menu-ul li:nth-child(8) a {
+	text-decoration: none;
+	background-color: #3388FF;
+	color: #fff;
+}
+/* container style */
+.container {
+	width: 100%;
+	clear: both;
+}
+.index-logo {
+	width: 100%;
+	margin: 0 auto;
+}
+.index-logo img {
+	width: 270px;
+	height: 129px;
+	margin-top: 40px;
+}
+.index-search-input {
+	width: 100%;
+	margin-top: 20px;
+}
+input.search-input {
+	width: 550px;
+	height: 32px;
+	line-height: 32px;
+	text-align: left;
+	text-indent: 5px;
+	font-size: 18px;
+}
+/* For FireFox Hack */
+@-moz-document url-prefix() {
+	input.search-input {
+		height: 34px;
+	}
+}
+input.search-button {
+	width: 100px;
+	height: 36px;
+	border: none;
+	background-color: #3388FF;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+	position: relative;
+	top:-2px\0;		/* IE9 */
+}
+/* For FireFox Hack */
+@-moz-document url-prefix() {
+	input.search-button {
+		position: relative;
+		top: -1px;
+	}
+}
+/* footer style */
+.footer {
+	width: 100%;
+	margin-top: 365px;
+}
+.footer-link ul {
+	margin: 10px auto;
+	text-align: center;
+	width: 229px;
+}
+.footer-link ul li {
+	float: left;
+	margin-right: 10px;
+}
+.footer-link ul li a {
+	color: #0000FF;
+}
+.footer-copyright {
+	clear: both;
+}
+.footer-icon {
+	width: 14px;
+	height: 17px;
+	display: inline-block;
+	background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_45de3f02.png) no-repeat;
+	background-position: -600px -96px;
+	position: relative;
+	top: 3px;
+}
+/* 头部隐藏的二级菜单 */
+li.header-hide-menu {
+	padding: 5px;
+	position: absolute;
+	top: 38px;
+	left: 319px;
+	display: none;
+}
+span.header-hide-menu-jt {
+	width: 8px;
+	height: 8px;
+	background-color: #fff;
+	border-left: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	top: 0px;
+	left: 36px;
+}
+ul.header-hide-class {
+	border: 1px solid #ccc;
+}
+ul.header-hide-class>li {
+	display: block;
+	position: relative;
+}
+ul.header-hide-class>li>a {
+	text-decoration: none;
+	display: block;
+	width: 65px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	font-weight: 100;
+}
+ul.header-hide-class>li>a:hover {
+	color: #fff;
+	background-color: #3388FF;
+}
+
+/* hide div */
+.hide-more-menu {
+	position: absolute;
+	top: 0;
+	left: 94%;
+	height: 100%;
+	background-color: #F9F9F9;
+	border-left: 1px solid #e2e2e2;
+	padding: 0 15px;
+	display: none;
+	z-index: 100;
+}
+.hide-more-menu ul li {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #F0F0F0;
+	padding: 0 0 5px 0;
+}
+.hide-more-menu ul li:first-child {
+	padding: 20px 0;
+}
+.hide-more-menu ul li a {
+	text-decoration: none;
+}
+.hide-more-menu ul li a:hover {
+	text-decoration: underline;
+}
+.hide-more-menu ul li a span.baidu-nuomi-icon {
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin-bottom: 5px;
+}
+.hide-more-menu ul li a span.baidu-zhidao-icon {
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -36px 0px;
+	margin-bottom: 5px;
+}
+.hide-more-menu ul li a span.baidu-yinyue-icon {
+	display: block;
+	width: 40px;
+	height: 36px;
+	margin: 0 auto;
+	background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -72px 0px;
+	margin-bottom: 5px;
+}
+.hide-more-menu ul li a span.baidu-tupian-icon {
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -112px 0px;
+	margin-bottom: 5px;
+}
+.hide-more-menu ul li a span.baidu-wenku-icon {
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -148px 0px;
+	margin-bottom: 5px;
+}
+.hide-more-menu ul li a span.baidu-fengyubang-icon {
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -184px 0px;
+	margin-bottom: 5px;
+}
+.hide-more-menu ul li a span.baidu-tuiguang-icon {
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+	background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/logos/bdbri_icons_2e35e84b.png);
+	background-repeat: no-repeat;
+	background-position: -220px 0px;
+	margin-bottom: 5px;
+}
+

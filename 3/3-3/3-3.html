@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<title>让百度首页适配所有浏览器</title>
+		<!--[if IE 6]><link rel="stylesheet" type="text/css" href="3-3-ie6.css" /><![endif]-->
+		<link rel="stylesheet" type="text/css" href="3-3.css" />
+	</head>
+	<body>
+		<!-- 头部导航菜单 -->
+		<div class="header-menu">
+			<ul class="header-menu-ul">
+				<li><a href="http://news.baidu.com">新闻</a></li>
+				<li><a href="http://www.hao123.com">hao123</a></li>
+				<li><a href="http://map.baidu.com">地图</a></li>
+				<li><a href="http://v.baidu.com">视频</a></li>
+				<li><a href="http://tieba.baidu.com">贴吧</a></li>
+				<li><a href="http://passport.baidu.com">登录</a></li>
+				<li><a href="http://www.baidu.com/gaoji/preferences.html" class="header-set">设置</a></li>
+				<li><a href="javascript:;" class="header-more-li">更多产品</a></li>
+				<li class="header-hide-menu">
+					<!-- 箭头 -->
+					<span class="header-hide-menu-jt"></span>
+					<!-- 隐藏二级菜单 -->
+					<ul class="header-hide-class">
+						<li><a href="">搜索设置</a></li>
+						<li><a href="">高级搜索</a></li>
+						<li><a href="">关闭预测</a></li>
+						<li><a href="">搜索历史</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+		</div>
+		<!-- 主体 -->
+		<div class="container">
+			<!-- Logo -->
+			<div class="index-logo">
+				<img src="https://www.baidu.com/img/bd_logo1.png" alt="百度" title="" />
+			</div>
+			<!-- 搜索框 -->
+			<div class="index-search-input">
+				<form action="/s" method="get">
+					<input type="text" name="search_content" value="" class="search-input" /><input type="submit" value="百度一下" class="search-button" />
+				</form>
+			</div>
+		</div>
+		<!-- 脚注 -->
+		<div class="footer">
+			<!-- 脚部链接 -->
+			<div class="footer-link">
+				<ul>
+					<li><a href="http://www.baidu.com/cache/sethelp/help.html">把百度设为首页</a></li>
+					<li><a href="http://home.baidu.com">关于百度</a></li>
+					<li><a href="http://ir.baidu.com">About Baidu</a></li>
+				</ul>
+			</div>
+			<!-- 版权声明 -->
+			<div class="footer-copyright">
+				&copy;2105&nbsp;Baidu&nbsp;<a href="http://www.baidu.com/duty">使用百度前必读</a>&nbsp;<a href="http://jianyi.baidu.com">意见反馈</a>&nbsp;京ICP备030173号<i class="footer-icon"></i>
+			</div>
+		</div>
+		<!-- 隐藏菜单 -->
+		<div class="hide-more-menu">
+			<ul>
+				<li class="hide-menu-title">更多产品</li>
+				<li><a href=""><span class="baidu-nuomi-icon"></span>糯米</a></li>
+				<li><a href=""><span class="baidu-zhidao-icon"></span>知道</a></li>
+				<li><a href=""><span class="baidu-yinyue-icon"></span>音乐</a></li>
+				<li><a href=""><span class="baidu-tupian-icon"></span>图片</a></li>
+				<li><a href=""><span class="baidu-wenku-icon"></span>文库</a></li>
+				<li><a href=""><span class="baidu-fengyubang-icon"></span>风云榜</a></li>
+				<li><a href=""><span class="baidu-tuiguang-icon"></span>百度推广</a></li>
+				<li class="baidu-all"><a href="">全部产品>></a></li>
+			</ul>
+		</div>
+		<!-- 百度CDN jQuery引入 -->
+		<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+		<script>
+			$(function(){
+				/* 右侧弹出菜单 */
+				$('.header-more-li').mouseenter(function(){
+					$('.hide-more-menu').fadeIn(500);
+				});
+				$('.hide-more-menu').mouseleave(function(){
+					$(this).fadeOut(500);
+				})
+				
+				/* 页头二级菜单弹出js */
+				$('.header-set').mouseenter(function(){
+					$('.header-hide-menu').show();
+				})
+				$('.header-hide-menu').mouseleave(function(){
+					$(this).hide();
+				})
+				
+			})
+		</script>
+	</body>
+</html>
+

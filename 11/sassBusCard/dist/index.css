@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/**
+ *	变量定义
+ */
+/* 文字排列、位置、颜色 */
+/* 区域高度和行高 */
+/* 定义区域宽和高 */
+/*
+ *	页面全局样式设置
+ */
+/* Public Style */
+body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, td, textarea, th, ul {
+  margin: 0;
+  padding: 0; }
+
+body, button, input, select, textarea {
+  font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, sans-serif;
+  font-size: 14px; }
+
+body {
+  background-color: #fff;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+img {
+  border: 0; }
+
+li, ol, ul, em {
+  list-style: none; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  outline: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+  a:hover {
+    color: #35B558; }
+
+article, aside, dialog, footer, header, section, footer, nav, figure, menu {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.w-600 {
+  width: 600px;
+  margin: 50px auto; }
+
+/* 子项目竖向排列 */
+.f-col {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column;
+  -moz-box-flex: column;
+  -ms-flex-flow: column;
+  flex-flow: column; }
+
+/* 子项目横向排列 */
+.f-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row;
+  -moz-box-flex: row;
+  -ms-flex-flow: row;
+  flex-flow: row; }
+
+/* 子项目区域占比 */
+.f-1 {
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.f-2 {
+  -webkit-flex: 2;
+  -moz-box-flex: 2;
+  -ms-flex: 2;
+  flex: 2; }
+
+.f-3 {
+  -webkit-flex: 3;
+  -moz-box-flex: 3;
+  -ms-flex: 3;
+  flex: 3; }
+
+/* 清除浮动 */
+.fixfloat {
+  clear: both; }
+
+.container {
+  background-color: #efefef;
+  box-shadow: 5px 5px 10px #333;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+.page-top {
+  width: 100%; }
+  .page-top .page-top-l {
+    overflow: hidden; }
+    .page-top .page-top-l .page-top-l-t {
+      display: block;
+      background-color: #FF116A;
+      width: 240px;
+      margin: 15px auto;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      text-align: center;
+      font-size: 65px;
+      color: #fff;
+      height: 100px;
+      line-height: 100px; }
+    .page-top .page-top-l .page-top-l-b {
+      text-align: center;
+      font-weight: bold; }
+  .page-top .page-top-r {
+    overflow: hidden;
+    margin-top: 15px; }
+    .page-top .page-top-r .page-top-r-t {
+      text-align: center;
+      font-size: 21px;
+      color: #009100;
+      font-weight: 600; }
+    .page-top .page-top-r .page-top-r-m {
+      text-align: center;
+      font-size: 12px;
+      color: #333;
+      height: 50px;
+      line-height: 50px; }
+    .page-top .page-top-r .page-top-r-b {
+      text-align: center;
+      font-size: 30px;
+      color: #ff116a; }
+
+.page-mdl {
+  background-color: #009100;
+  margin: 10px 0; }
+  .page-mdl ul {
+    width: 88%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 12px;
+    color: #fff;
+    height: 160px;
+    line-height: 160px; }
+    .page-mdl ul li {
+      float: left;
+      width: 22px;
+      height: 23px;
+      line-height: 23px; }
+
+.page-btm {
+  width: 100%; }
+  .page-btm .page-btm-t {
+    text-align: center;
+    font-size: 12px;
+    color: #333; }
+  .page-btm .page-btm-b {
+    width: 70%;
+    height: 30px;
+    margin: 0 auto; }
+    .page-btm .page-btm-b .page-btm-b-l {
+      width: 300px;
+      height: 8px;
+      background-color: #FF116A;
+      display: inline-block; }
+    .page-btm .page-btm-b .page-btm-b-r {
+      width: 0;
+      height: 0;
+      display: inline-block;
+      border-top: 16px solid transparent;
+      border-left: 100px solid #FF116A;
+      border-bottom: 0px solid transparent;
+      margin-left: -5px;
+      margin-top: 5px; }

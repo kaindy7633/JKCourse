@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>开发一个点击js可改变主题颜色的网站</title>
+		<link rel="stylesheet" type="text/css"	href="6-2.css" />
+	</head>
+	<body>
+		<!-- page main start -->
+		<div class="container">
+			<!-- page header start -->
+			<header>
+				<!-- logo -->
+				<div class="header-logo"><img src="images/webv2.png" alt="hao123" /></div>
+				<!-- 搜索框 -->
+				<div class="header-search">
+					<div class="header-search-top">
+						<input type="text" value="" /><button>百度一下</button>
+					</div>
+					<div class="header-search-btm">
+						<ul>
+							<li>热搜：</li>
+							<li><a href="javascript:;">北京天气</a></li>
+							<li><a href="javascript:;">好声音</a></li>
+							<li><a href="javascript:;">花千骨结局</a></li>
+							<li><a href="javascript:;">旋风少女</a></li>
+							<li><a href="javascript:;">克拉恋人</a></li>
+							<li><a href="javascript:;">爸爸去哪</a></li>
+							<li><a href="javascript:;">更多</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- 更改主题 -->
+				<div class="chg-theme">
+					<ul id="theme">
+						<!--<li>主题：</li>-->
+						<li data-col="chgThemeRed"></li>
+						<li data-col="chgThemeGreen"></li>
+						<li data-col="chgThemeBlue"></li>
+						<li data-col="chgThemeOrange"></li>
+						<li data-col="chgThemeViolet"></li>
+					</ul>
+				</div>
+			</header>
+			<!-- page header end -->
+			<!-- page nav start -->
+			<nav>
+				<ul id="navUl">
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">电视剧</a></li>
+					<li><a href="javascript:;">最新电影</a></li>
+					<li><a href="javascript:;">新闻头条</a></li>
+					<li><a href="javascript:;">军事热点</a></li>
+					<li><a href="javascript:;">八卦娱乐</a></li>
+					<li><a href="javascript:;">热门游戏</a></li>
+					<li><a href="javascript:;">小游戏</a></li>
+					<li><a href="javascript:;">今日特价</a></li>
+					<li><a href="javascript:;">特价旅游</a></li>
+					<li><a href="javascript:;">最新小说</a></li>
+				</ul>
+			</nav>
+			<!-- page nav end -->
+			<!-- page content start -->
+			<section>
+				<div class="sec-left">
+					<div class="sec-left-top"><img src="images/065e16a8e9d26e35ecf3da6f3540ed98.jpg" /></div>
+					<div class="sec-left-btm">
+						<ul id="sec-left-ul">
+							<li><i></i>电视剧  | 综艺</li>
+							<li><i></i>游戏  | 小游戏</li>
+							<li><i></i>电影  | 直播</li>
+							<li><i></i>动画  | 漫画</li>
+							<li><i></i>头条  | 军事</li>
+							<li><i></i>旅游  | 音乐</li>
+							<li><i></i>彩票  | 股票</li>
+							<li><i></i>搞笑  | 小说</li>
+							<li><i></i>特价  | 生活</li>
+							<li><i></i>教育  | 天气</li>
+						</ul>
+					</div>
+				</div>
+				<div class="sec-right">
+					<div class="sec-right-top">
+						<ul id="sec-right-top-ul">
+							<li><a href="javascript:;"><i></i>百度▪贴吧</a></li>
+							<li><a href="javascript:;"><i></i>新浪▪微博</a></li>
+							<li><a href="javascript:;"><i></i>搜狐▪热点</a></li>
+							<li><a href="javascript:;"><i></i>腾讯▪空间</a></li>
+							<li><a href="javascript:;"><i></i>网易</a></li>
+							<li><a href="javascript:;"><i></i>爱奇艺高清</a></li>
+							<li><a href="javascript:;"><i></i>天猫▪优选精品</a></li>
+							<li><a href="javascript:;"><i></i>凤凰网</a></li>
+							<li><a href="javascript:;"><i></i>淘宝网</a></li>
+							<li><a href="javascript:;"><i></i>免费游戏</a></li>
+							<li><a href="javascript:;"><i></i>4399游戏</a></li>
+							<li><a href="javascript:;"><i></i>新华▪人民</a></li>
+							<li><a href="javascript:;"><i></i>京东商城</a></li>
+							<li><a href="javascript:;"><i></i>聚划算</a></li>
+							<li><a href="javascript:;"><i></i>今日特价</a></li>
+							<li><a href="javascript:;"><i></i>影视▪粑粑3</a></li>
+							<li><a href="javascript:;"><i></i>汽车之家</a></li>
+							<li><a href="javascript:;"><i></i>去哪儿</a></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+					<div class="sec-right-btm">
+						<ul id="sec-right-btm-ul">
+							<li><a href="javascript:;">东方理财▪财富</a></li>
+							<li><a href="javascript:;">58同城</a></li>
+							<li><a href="javascript:;">搜房网</a></li>
+							<li><a href="javascript:;">携程旅游网</a></li>
+							<li><a href="javascript:;">PPTV聚力</a></li>
+							<li><a href="javascript:;">机票▪12306</a></li>
+							<li><a href="javascript:;">聚美优品</a></li>
+							<li><a href="javascript:;">赶集网</a></li>
+							<li><a href="javascript:;">易车网</a></li>
+							<li><a href="javascript:;">萌主页▪动漫</a></li>
+							<li><a href="javascript:;">爱卡汽车</a></li>
+							<li><a href="javascript:;">美拍</a></li>
+							<li><a href="javascript:;">唯品会</a></li>
+							<li><a href="javascript:;">同程旅游</a></li>
+							<li><a href="javascript:;">途牛旅游网</a></li>
+							<li><a href="javascript:;">百度浏览器</a></li>
+							<li><a href="javascript:;">太平洋汽车</a></li>
+							<li><a href="javascript:;">艺龙网</a></li>
+							<li><a href="javascript:;">百度糯米</a></li>
+							<li><a href="javascript:;">蘑菇街</a></li>
+							<li><a href="javascript:;">37游戏</a></li>
+							<li><a href="javascript:;">驴妈妈旅游</a></li>
+							<li><a href="javascript:;">百姓网</a></li>
+							<li><a href="javascript:;">大智慧炒股</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- page content end -->
+		</div>
+		<!-- page main end -->
+		<!-- JS Loading... -->
+		<script type="text/javascript" src="6-2.js"></script>
+	</body>
+</html>

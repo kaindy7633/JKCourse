@@ -1,0 +1,55 @@
+@charset "utf-8";
+.container {
+	margin: 150px auto;
+}
+/* 登录页 */
+.login-top {
+	padding: 0;
+}
+.login-top>div {
+	padding: 0;
+}
+.login-top-logo {
+	width: 80px;
+    height: 32px;
+    margin: 7px 0;
+}
+.login-top-title {
+	font-size: 22px;
+	line-height: 45px;
+	text-align: center;
+}
+.login-input {
+	color: #666;
+	margin: 25px auto;
+}
+.input-colmun {
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+.input-table {
+	width: 100%;
+	border: 1px solid #ddd;
+}
+.input-table tr {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ddd;
+}
+.input-table tr td {
+	border: none;
+}
+.input-table tr td input {
+	border: none;
+}
+.input-colmun button {
+	width: 100%;
+	margin-top: 15px;
+}
+.footer {
+	padding: 50px 0;
+	text-align: center;
+}
